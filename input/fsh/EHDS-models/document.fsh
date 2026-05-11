@@ -5,34 +5,43 @@ Description: "Model for common document data elements, including the common head
 
 * header ^short = "Document header"
   * identifier 1..*
-    * ^short = "Unique identifier of the document"
-  * status ^short = "Status of the document"
+    * ^short = "Unique identifier of the document."
+  * status 
+    * ^short = "Status of the document."
+    * ^definition = "Status of the document."
+    * ^binding.description = "HL7 Composition Status"
+    * ^binding.strength = #preferred
   * author[x] 1..* 
-    * ^short = "Author(s) of the document"
+    * ^short = "Author of the document."
+    * ^definition = "Author of the document."
   * date 1..1
-    * ^short = "Date of finalising/issuing the document"
+    * ^short = "Date of finalising/issuing the document."
+    * ^definition = "Date of finalising/issuing the document."
   * source 0..0
-  * documentType 1..1 CodeableConcept "Type of document at hand, e.g. 60591-5 Patient summary document."
+  * language
+    * ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
+    * ^definition = "Language in which the document is written. Language is expressed by the IETF language tag."
+  * documentType 1..1 CodeableConcept "Type of document, e.g. 60591-5 Patient summary document."
     * ^binding.description = "LOINC"
     * ^binding.strength = #preferred
   * documentTitle 1..1 string "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'"
-  * period 0..1 Period "Time of service that is being documented"
-  * version 0..1 string "Business version of the document. The exact algorithm for versioning is decided by the producer/custodian"
-  * attestation 0..* Base "Document attestation details"
-    * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice  "Attester who validated the document"
-    * datetime 1..1 dateTime "Date and time of the approval of the document by Attester"
-  * legalAuthentication 0..* Base "Document legal authentication details"
+  * period 0..1 Period "Time period of information covered in the document." //"Time of service that is being documented"
+  * version 0..1 string "Version of the document."
+  * attestation 0..* Base "Document attestation details."
+    * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice  "Attester who validated the document."
+    * datetime 1..1 dateTime "Date and time of the approval of the document by the attester."
+  * legalAuthentication 0..* Base "Document legal authentication details."
     * legalAuthenticator[x] 1..1 EHDSHealthProfessional or EHDSOrganisation 
     "The person or organisation taking responsibility for the content of the document."
-    * datetime 1..1 dateTime "Date and time when the document was authorised"
-  * eventType 0..* CodeableConcept "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
-    * ^binding.description = "LOINC, SNOMED CT, dicom-cid-33-Modality"
+    * datetime 1..1 dateTime "Date and time when the document was authenticated."
+  * eventCategory 0..* CodeableConcept "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
+    * ^binding.description = "LOINC, SNOMED CT, DICOM-CID 33 Modality"
     * ^binding.strength = #preferred
-  * serviceSpecialty 0..* CodeableConcept "Additional details about where the content was created (e.g. clinical specialty)"
+  * serviceSpecialty 0..* CodeableConcept "Additional details about where the content was created (e.g. clinical specialty)."
     * ^binding.description = "SNOMED CT"
     * ^binding.strength = #preferred
-  * custodian 0..1 EHDSOrganisation "Organisation that is in charge of maintaining the document/report."
-* presentedForm 0..* EHDSAttachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document"
+  * custodian 0..1 EHDSOrganisation "Organisation that is in charge of maintaining the document."
+* presentedForm 0..* EHDSAttachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."
 //* knowledgeResources 0..* Base "Related documents and information sources"
 //  * externalReference 0..* RelatedArtifact "..."
 //  * relatedTo 0..* Reference "..."

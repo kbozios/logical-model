@@ -2,7 +2,7 @@ Logical: EHDSDataSet
 Title: "DataSet model"
 Description: "Common elements (including header) for all documents and their independently functioning parts, e.g FHIR resources."
 * header 1..1 Base "Basic metadata for this information"
-  * subject 1..1 EHDSPatient "Patient/subject information"
+  * subject 1..1 EHDSPatient "Patient/subject information."
   * identifier 0..* Identifier "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
   * author[x] 0..* EHDSHealthProfessional or EHDSOrganisation or EHDSDevice "Author(s) responsible for the provided information." """Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."""
   * date 0..1 dateTime "Date and optionally time of authoring/issuing"
