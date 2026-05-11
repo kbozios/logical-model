@@ -18,10 +18,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   pull-requests: write
-  
+
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
