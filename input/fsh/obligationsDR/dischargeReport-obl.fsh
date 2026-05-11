@@ -46,7 +46,7 @@ Description: "Obligations for the logical model of discharge report."
       * insert OblProducer(#SHALL:able-to-populate)
     * datetime
       * insert OblProducer(#SHALL:able-to-populate)
-  * eventType
+  * eventCategory
     * insert OblProducer(#SHALL:able-to-populate)
   * serviceSpecialty
     * insert OblProducer(#SHALL:able-to-populate)
@@ -56,7 +56,7 @@ Description: "Obligations for the logical model of discharge report."
 * body
   * insert OblProducerDoc(#SHALL:able-to-populate, "Each EHR system that is a producer of a discharge report SHALL be able to provide structured information about the report body. This obligation applies to capability\, not to population in every instance.")
   * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process structured body information.")
-  * alerts
+/*  * alerts
     * insert OblProducerDoc(#SHOULD:able-to-populate, "Alerts may not be present in all encounters\, but the document structure must support their representation. Systems must be capable of populating and processing this section when alerts are present; omission is acceptable where permanently out of scope and justified during conformance testing.")
     * insert OblConsumerDoc(#SHOULD:process, "EHR systems that consume discharge report SHALL process the alerts section when it is present in the document.")
     * generatedNarrative
@@ -65,6 +65,7 @@ Description: "Obligations for the logical model of discharge report."
     * medicalAlert
       * insert OblProducerDoc(#SHOULD:able-to-populate, "Structured or textual alert entries represent clinically critical information when present. Systems must be capable of populating these entries; omission is acceptable where permanently out of scope and justified during conformance testing.")
       * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process the medicalAlert element of the alerts section when it is present in the document.")
+ */
   * encounterInformation
     * insert OblProducerDoc(#SHALL:able-to-populate, "Encounter context is essential for interpreting all clinical content in the document. Systems claiming conformance must be capable of populating this section for every document instance.")
     * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process structured information about the encounter.")
@@ -77,7 +78,7 @@ Description: "Obligations for the logical model of discharge report."
     * note
       * insert OblProducer(#SHOULD:able-to-populate)
       * insert OblConsumer(#SHALL:process)
-  * admissionEvaluation
+/*  * admissionEvaluation
     * insert OblProducerDoc(#SHALL:able-to-populate, "Admission evaluation does not occur in all encounters but must be representable where applicable. Systems must be capable of populating this section; omission is acceptable where permanently out of scope and justified during conformance testing.")
     * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process structured information about the admission evaluation.")
     * generatedNarrative
@@ -110,6 +111,8 @@ Description: "Obligations for the logical model of discharge report."
     * note
       * insert OblProducer(#SHOULD:able-to-populate)
       * insert OblConsumer(#SHALL:process)
+
+*/
   * courseOfEncounter
     * insert OblProducerDoc(#SHALL:able-to-populate, "Course of encounter is a core component of the discharge report. Systems claiming conformance must be capable of populating this section for every document instance.")
     * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process structured information about the course of encounter.")
@@ -152,6 +155,7 @@ Description: "Obligations for the logical model of discharge report."
     * note
       * insert OblProducer(#SHOULD:able-to-populate)
       * insert OblConsumer(#SHALL:process)
+/*
   * medicationSummary
     * insert OblProducerDoc(#SHALL:able-to-populate, "Medication summary at discharge may vary by encounter but must be representable when applicable. Systems must be capable of populating this section; omission is acceptable where justified during conformance testing.")
     * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process structured information about medication summary.")
@@ -164,6 +168,8 @@ Description: "Obligations for the logical model of discharge report."
     * note
       * insert OblProducer(#SHOULD:able-to-populate)
       * insert OblConsumer(#SHALL:process)
+*/
+
   * carePlan
     * insert OblProducerDoc(#SHOULD:able-to-populate, "Post-discharge care plans and recommendations may vary by encounter. Systems must be capable of representing this section; omission is acceptable where justified during conformance testing.")
     * insert OblConsumerDoc(#SHALL:process, "EHR systems that consume discharge report SHALL process structured information about care plan and recommendations after discharge.")

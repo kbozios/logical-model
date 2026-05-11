@@ -15,7 +15,7 @@ Description: """Imaging report reflects the observations and interpretations of 
   * documentType
     * ^short = "Type of document (e.g. 18748-4 Diagnostic imaging study)"
     * ^definition = "Type of document (e.g. 18748-4 Diagnostic imaging study)"
-  * eventType
+  * eventCategory
     * ^short = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^definition = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
   * accessionNumber 0..* Identifier "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study(ies) and related imaging report(s)."

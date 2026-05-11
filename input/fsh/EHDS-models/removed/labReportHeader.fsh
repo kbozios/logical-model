@@ -28,8 +28,8 @@ Characteristics: #can-be-target
 //  * period 0..1 Period "A.1.9.4 - Period" """Documented period service. Typically used for searching purposes."""
 //  * reportDateAndTime 1..1 dateTime "A.1.9.5 - Report date and time" """Date and time of the Discharge  report creation."""
 //  * documentTitle 1..1 string "A.1.9.6 - Document title" """Document title, fix value "Discharge report". """
-* header.eventType ^binding.description = "SNOMED CT"
-* header.eventType ^binding.strength = #preferred
+* header.eventCategory ^binding.description = "SNOMED CT"
+* header.eventCategory ^binding.strength = #preferred
 //  * authorSpecialty 0..* CodeableConcept "A.1.9.8 - Specialty" """Additional details about where the content was created (e.g. clinical specialty)"""
 //    * ^binding.description = "SNOMED CT"
 //    * ^binding.strength = #preferred

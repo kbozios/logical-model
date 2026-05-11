@@ -47,7 +47,7 @@ Description: "Obligations for the logical model of imaging report."
       * insert OblConsumer(#SHOULD:process)
     * datetime
       * insert OblProducer(#SHALL:able-to-populate)
-  * eventType
+  * eventCategory
     * insert OblProducer(#SHOULD:able-to-populate)
     * insert OblConsumer(#SHOULD:process)
   * serviceSpecialty

@@ -28,7 +28,7 @@ Characteristics: #can-be-target
   * period 0..1 Period "A.1.9.4 - Period" """Documented period service. Typically used for searching purposes."""
   * reportDateAndTime 1..1 dateTime "A.1.9.5 - Report date and time" """Date and time of the report creation."""
   * documentTitle 1..1 string "A.1.9.6 - Document title" """Document title, such as "Discharge report", "Laboratory Result Report" etc.. """
-  * eventType 0..* CodeableConcept "A.1.9.7 - Event type" """Categorization of an "event" covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of event types depends on the use case and agreement betwen data sharing parties. This meta-data element serves primarily for searching and filtering purpuses."""
+  * eventCategory 0..* CodeableConcept "A.1.9.7 - Event type" """Categorization of an "event" covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of event types depends on the use case and agreement betwen data sharing parties. This meta-data element serves primarily for searching and filtering purpuses."""
     * ^binding.description = "LOINC, SNOMED CT, dicom-cid-33-Modality"
     * ^binding.strength = #preferred
   * specialty 0..* CodeableConcept "A.1.9.8 - Specialty" """Additional details about where the content was created (e.g. clinical specialty)"""

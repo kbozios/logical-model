@@ -1,7 +1,7 @@
 Logical: EHDSAdvanceDirective
 Parent: EHDSDataSet
 Title: "Advance directive model"
-Description: """Healthcare directives concerning life or after life wishes of the patient"""
+Description: """TO BE REMOVED. Healthcare directives concerning life or after life wishes of the patient"""
 
 * header
   * author[x] ^short = "Author of the advance directive."

@@ -1,7 +1,7 @@
 Logical: EHDSTravelHistory
 Parent: EHDSDataSet
 Title: "Travel history model"
-Description: "Relevant information about the patient's recent travel history, for one visit"
+Description: "TO BE REMOVED. Relevant information about the patient's recent travel history, for one visit"
 * country 1..1 CodeableConcept "Country visited"
   * ^binding.description = "ISO 3166"
   * ^binding.strength = #preferred

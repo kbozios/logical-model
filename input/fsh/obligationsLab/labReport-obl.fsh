@@ -46,7 +46,7 @@ Description: "Obligations for the logical model of laboratory report"
       * insert OblProducer(#SHALL:able-to-populate)
     * datetime
       * insert OblProducer(#SHALL:able-to-populate)
-  * eventType
+  * eventCategory
     * insert OblProducer(#SHALL:able-to-populate)
   * serviceSpecialty
     * insert OblProducer(#SHALL:able-to-populate)
