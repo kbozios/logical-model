@@ -1,18 +1,18 @@
-id: xtehr.eu.ehds.models
-canonical: http://www.xt-ehr.eu/fhir/models
+id: eu.ehds.models
+canonical: http://ehds.eu/fhir/models
 name: EHDSModels
 title: EHDS Logical Information Models
 description: EHDS Logical Information Models
-status: active # draft | active | retired | unknown
-version: 1.0.0
+status: draft # draft | active | retired | unknown
+version: 0.1.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2022+
-releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+copyrightYear: 2026+
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Xt-EHR
-  url: http://www.xt-ehr.eu/
+  name: EC
+  url: http://commission.europa.eu/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the

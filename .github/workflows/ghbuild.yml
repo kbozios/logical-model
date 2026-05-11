@@ -25,3 +25,60 @@ jobs:
   # This workflow contains a single job called "build"
   call_build: 
     uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@v1
+
+  build_tables:
+    needs: call_build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          ref: 'gh-pages'
+
+      - name: Install rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - name: Install rust cache
+        uses: Swatinem/rust-cache@v2
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Checkout table tool
+        uses: actions/checkout@v6
+        with:
+          repository: danka74/easy-tree
+          path: easy-tree
+          
+      - name: Checkout table tool
+        uses: actions/checkout@v6
+        with:
+          repository: danka74/fhir-generate
+          path: fhir-generate
+          
+      - name: Cache external tool
+        uses: actions/cache@v4
+        with:
+          path: fhir-generate/target
+          key: ${{ runner.os }}-fhir-generate-${{ hashFiles('fhir-generate/Cargo.lock') }}
+
+      - name: Build tables
+        run:  |
+          cd fhir-generate
+          cargo build --release
+          ./target/release/fhir-generate table ../StructureDefinition*.json
+          pandoc *.md -o tables.docx
+          
+      - name: Upload Word Document
+        uses: actions/upload-artifact@v7
+        with:
+          name: tables-word-doc
+          path: fhir-generate/tables.docx
+          archive: false
+
+          
