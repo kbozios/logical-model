@@ -5,3 +5,4 @@ The IG is for COM internal revision during the ongoing regulatory process and do
 The temporary build: [https://build.fhir.org/ig/EEHRxF/logical-model](https://build.fhir.org/ig/EEHRxF/logical-model/)  
 
 GitHub Pages build: https://eehrxf.github.io/logical-model/
+
