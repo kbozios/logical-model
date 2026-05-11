@@ -9,7 +9,8 @@ name: GH_PAGES_BUILD
 
 permissions:
   contents: read
-  pages: write 
+  pages: write
+  pull-requests: write
   
 # Controls when the action will run. 
 on:
