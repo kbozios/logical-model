@@ -6,11 +6,6 @@
 # 2021-11-26: reusable workflow
 
 name: GH_PAGES_BUILD
-
-permissions:
-  contents: read
-  pages: write
-  pull-requests: write
   
 # Controls when the action will run. 
 on:
@@ -22,6 +17,11 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  pull-requests: write
+  
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
