@@ -25,9 +25,7 @@ permissions:
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
-    - uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@v1
-      with:
-        ref: comitology-wg
+    uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@v1
 
   build_tables:
     needs: call_build
