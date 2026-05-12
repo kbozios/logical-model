@@ -72,7 +72,7 @@ jobs:
         run:  |
           cd fhir-generate
           cargo build --release
-          ./target/release/fhir-generate table ../StructureDefinition*.json
+          ./target/release/fhir-generate table ../branches/comitology-wg/StructureDefinition*.json
           pandoc *.md -o tables.docx
           
       - name: Upload Word Document
