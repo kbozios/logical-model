@@ -23,7 +23,7 @@ Description: "Logical model for medication dispensation (based on a request and 
   * ^definition = "The status of the dispense, e.g. completed, declined, entered-in-error. [Used for searching]"
   * ^binding.description = "HL7 MedicationDispense Status Codes"
   * ^binding.strength = #preferred
-* header.source 0..0
+// * header.source 0..0
 * dispenseLocation 0..1 EHDSLocation "Location of dispense"
 * receiver[x] 0..1 EHDSPatient or EHDSHealthProfessional or EHDSRelatedPerson "Identification of the person who received the dispensed medication, especially when it was not the patient. When not present, it is assumed that the patient is the receiver."
 * relatedRequest 0..* Identifier "Identifier of the prescription item the dispense is related to.  [Used for searching]"

@@ -21,7 +21,7 @@ Description: "Logical model for medication prescription. A prescription contains
     * ^definition = "Time of issuing (signing) the prescription by health care professional. [Used for searching]"  
   * status ^short = "Status of authorisation for dispensing the prescription items. This should not be the status of treatment. For a multiple-item prescription, this conveys the aggregate status of the entire prescription. In case of a single-item prescription, prescriptionItem.status shall be the same as EHDSMedicationPrescription.header.status. [Used for searching]"
   * status ^definition = "Status of authorisation for dispensing the prescription items. This should not be the status of treatment. For a multiple-item prescription, this conveys the aggregate status of the entire prescription. In case of a single-item prescription, prescriptionItem.status shall be the same as EHDSMedicationPrescription.header.status. [Used for searching]"
-  * source 0..0
+//  * source 0..0
   * statusReason[x] 0..1 CodeableConcept or string "Reason for the current status of prescription, for example the reason why the prescription was made invalid or changed from a previous state."
 * presentedForm 0..* EHDSAttachment "Entire prescription as issued. Various formats could be provided, PDF format is recommended."
 

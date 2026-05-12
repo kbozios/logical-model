@@ -17,7 +17,7 @@ Description: "Model for common document data elements, including the common head
   * date 1..1
     * ^short = "Date of finalising/issuing the document."
     * ^definition = "Date of finalising/issuing the document."
-  * source 0..0
+//  * source 0..0
   * language
     * ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
     * ^definition = "Language in which the document is written. Language is expressed by the IETF language tag."
