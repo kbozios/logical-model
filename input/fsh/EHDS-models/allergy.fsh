@@ -14,8 +14,8 @@ Description: """Model for allergy or intolerance."""
 //    * ^short = "The author of the allergy/intolerance information."
     * ^definition = "The author of the allergy/intolerance information."
 
-* agentOrAllergen 1..1 CodeableConcept "Code that identifies the allergy or intolerance" 
-  * ^comment = "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., "Latex"), an allergy or intolerance condition (e.g., "Latex allergy"), or a negated/excluded code for a specific substance or class (e.g., "No latex allergy"). It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'."
+* agentOrAllergen 1..1 CodeableConcept "Code that identifies the allergy or intolerance." 
+  * ^comment = "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., Latex), an allergy or intolerance condition (e.g., Latex allergy), or a negated/excluded code for a specific substance or class (e.g., No latex allergy). It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'."
   * ^binding.description = "ATC, EMA SPOR SMS, SNOMED CT"
   * ^binding.strength = #preferred
   * ^requirements = "eHN PS Guideline, MyHealth@EU, ISO IPS"
