@@ -6,17 +6,22 @@ Description: """Model describes the administration of immunisation products, inc
 * header.status 
   * ^short = "Status of the immunisation event (completed, not-done)."
   * ^definition = "Status of the immunisation event (completed, not-done)."
+  * ^binding.description = "HL7 Immunization Status Codes"
+  * ^binding.strength = #preferred
 * header.author[x] 
-  * ^short = "The author of the immunisation statement."
+//  * ^short = "The author of the immunisation statement."
   * ^definition = "The author of the immunisation statement."
-* diseaseOrAgentTargeted 0..* CodeableConcept "Disease or agent that the vaccination provides protection against (e.g. 76902006 Tetanus)."
+* diseaseOrAgentTargeted 0..* CodeableConcept "Disease or agent that the vaccination provides protection against."
+  * ^definition = "Disease or agent that the vaccination provides protection against (e.g. 76902006 Tetanus)."
   * ^binding.description = "ICD-10, SNOMED CT"
   * ^binding.strength = #preferred
-* vaccine 1..1 CodeableConcept "Type of immunisation, e.g. J07AM01 Tetanus toxoid; or 871803007 Hepatitis A and Hepatitis B virus antigens only vaccine product."
+* vaccine 1..1 CodeableConcept "Type of immunisation."
+  * ^definition = "Type of immunisation, e.g. J07AM01 Tetanus toxoid; or 871803007 Hepatitis A and Hepatitis B virus antigens only vaccine product."
   * ^binding.description = "SNOMED CT, ATC"
   * ^binding.strength = #preferred
-* administeredProduct 0..1 EHDSMedication "Administered medicinal product (e.g. TETAVAX suspension for injection), including batch/lot details when necessary."
+* administeredProduct 0..1 EHDSMedication "Administered medicinal product, including batch/lot details when necessary."
+  * ^definition = "Administered medicinal product (e.g. TETAVAX suspension for injection), including batch/lot details when necessary."
 * administrationTime 1..1 dateTime "The date and optionally the exact time when the vaccination was administered."
 * administeringCentre 0..1 EHDSOrganisation "Administering centre or a health authority responsible for the vaccination event"""
 * administrator 0..1 EHDSHealthProfessional "Health professional responsible for administering the immunisation product."
-* note 0..1 string "Any additional free-text information about the immunisation"
+* note 0..1 string "Free text notes by the health professional."
