@@ -39,7 +39,7 @@ Description: """A generic, flexible model for any kind of discharge report. Diff
 /*  * admissionEvaluation 0..1 Base "Section: Admission evaluation. Admission evaluation section should be reported only if it is relevant to ensure continuity of care."
     * ^requirements = "eHN Guideline HDR (v1.1): A.2.4"
     * generatedNarrative 0..1 string "Narrative, potentially formatted, content of the whole section."
-    * objectiveFindings 0..* EHDSObservation "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination"
+    * objectiveFindings 0..* EHDSObservation "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination."
       * ^requirements = "eHN Guideline HDR (v1.1): A.2.4.1"
     * functionalStatus[x] 0..* EHDSCondition or EHDSObservation "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being"
       * ^requirements = "eHN Guideline HDR (v1.1): A.2.4.2"
