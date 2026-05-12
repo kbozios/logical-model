@@ -74,7 +74,7 @@ jobs:
           cd fhir-generate
           cargo build --release
           ./target/release/fhir-generate table ../branches/$(basename ${{ github.ref }})/StructureDefinition*.json
-          pandoc *.md -o tables.docx --reference-doc=EHDS\ Comitology\ Working\ Group.docx 
+          pandoc *.md -o tables.docx --reference-doc=custom-reference.docx 
           
       - name: Upload Word Document
         uses: actions/upload-artifact@v7
