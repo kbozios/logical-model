@@ -70,6 +70,7 @@ jobs:
 
       - name: Build tables
         run:  |
+          echo "${{ github.ref }}"
           cd fhir-generate
           cargo build --release
           ./target/release/fhir-generate table ../branches/comitology-wg/StructureDefinition*.json
