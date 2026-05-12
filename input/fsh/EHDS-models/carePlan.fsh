@@ -13,9 +13,9 @@ Description: "Simplified model for care plan. The model includes minimal informa
   * ^short = "The responsible party (custodian) for the care plan."
   * ^definition = "The responsible party (custodian) for the care plan."
 * header.status 
-  * ^short = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
+//  * ^short = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
   * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
-  * ^binding.description = "HL7 Request status"
+  * ^binding.description = "HL7 Request Status"
   * ^binding.strength = #preferred
 * title 0..1 string "Human-friendly name for the care plan"
 * description 0..1 string "A description of the scope and nature of the plan."
@@ -23,16 +23,7 @@ Description: "Simplified model for care plan. The model includes minimal informa
 * addresses[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
   * ^binding.description = "ICD-10, SNOMED CT, Orphacode"
   * ^binding.strength = #preferred
-* activity[x] 0..* CodeableConcept or Reference "The details of the proposed activity represented in a specific resource."
-* goal 0..* CodeableConcept "Describes the intended objective(s) of carrying out the care plan."
+* activity 0..* string "The details of the proposed activity represented in a specific resource."
+* goal 0..* string "Describes the intended objective(s) of carrying out the care plan."
 
-/*
-* note 0..* string "Note" """General notes about the care plan not covered elsewhere."""
-* intent 1..1 CodeableConcept "Intent" """Indicates the level of authority/intentionality associated with the care plan and where the care plan fits into the workflow chain."""
-  * ^binding.description = "HL7 Care Plan Intent "
-  * ^binding.strength = #preferred
-* custodian 0..1 Reference(EHDSPatient or EHDSHealthProfessional or  EHDSHealthProfessional or  EHDSOrganisation or EHDSRelatedPerson) "Custodian" """Custodian is responsible for the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor."""
-* contributor 0..* Reference(EHDSPatient or EHDSHealthProfessional or EHDSHealthProfessional or  EHDSOrganisation or EHDSRelatedPerson) "Contributor" """Identifies the individual(s), organisation or device who provided the contents of the care plan."""
-* activity 0..* Reference(EHDSAppointment or EHDSMedicationPrescription or EHDSTask or EHDSServiceRequest) "Activity" """"""
-* goal 0..* EHDSGoal "Goal" """Describes the intended objective(s) of carrying out the care plan."""
-*/
+// TODO activity and goal as a backbone? status has been asked to be removed, but mandatory in FHIR
