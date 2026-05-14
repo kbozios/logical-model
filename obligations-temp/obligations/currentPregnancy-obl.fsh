@@ -1,5 +1,5 @@
-Profile: EHDSCurrentPregnancyObligations
-Parent: EHDSCurrentPregnancy
+Profile: EHDSCurrentPregnancyStatusObligations
+Parent: EHDSCurrentPregnancyStatus
 Title: "Current pregnancy obligations"
 Description: "Obligations for the logical model for current pregnancy."
 

@@ -1,4 +1,4 @@
-Logical: EHDSCurrentPregnancy
+Logical: EHDSCurrentPregnancyStatus
 Parent: EHDSDataSet
 Title: "Current pregnancy status model"
 Description: "Current pregnancy status"

@@ -256,7 +256,7 @@ groups:
       - StructureDefinition/EHDSAlert
       - StructureDefinition/EHDSAdvanceDirective
       - StructureDefinition/EHDSCondition
-      - StructureDefinition/EHDSCurrentPregnancy
+      - StructureDefinition/EHDSCurrentPregnancyStatus
       - StructureDefinition/EHDSAddress
       - StructureDefinition/EHDSHumanName
       - StructureDefinition/EHDSTelecom
@@ -275,78 +275,78 @@ groups:
       - StructureDefinition/EHDSPregnancyHistory
 
 
-  EHDSObligations:
-    name: EHDS Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations are default obligations across use cases.
-    resources:
-      - StructureDefinition/EHDSMedicationObligations
-      - StructureDefinition/EHDSMedicationUseObligations
-      - StructureDefinition/EHDSMedicationAdministrationObligations
-      - StructureDefinition/EHDSDosageObligations
-      - StructureDefinition/EHDSObservationObligations
-      - StructureDefinition/EHDSProcedureObligations
-      - StructureDefinition/EHDSImmunisationObligations
-      - StructureDefinition/EHDSAllergyIntoleranceObligations
-      - StructureDefinition/EHDSPatientObligations
-      - StructureDefinition/EHDSHealthProfessionalObligations
-      - StructureDefinition/EHDSOrganisationObligations
-      - StructureDefinition/EHDSDeviceObligations
-      - StructureDefinition/EHDSDeviceUseObligations
-      - StructureDefinition/EHDSRelatedPersonObligations
-      - StructureDefinition/EHDSAlertObligations
-      - StructureDefinition/EHDSAdvanceDirectiveObligations
-      - StructureDefinition/EHDSConditionObligations
-      - StructureDefinition/EHDSCurrentPregnancyObligations
-
-  EHDSPatientSummaryObligations:
-    name: EHDS Patient Summary Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. For other related models, general obligations apply.
-    resources:
-      - StructureDefinition/EHDSPatientSummaryObligations
-
-  EHDSPrescribingDispensingObligations:
-    name: EHDS Prescribing and Dispensing Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to prescribing and dispensing systems (including repositories). For other related models, general obligations apply.
-    resources:
-      - StructureDefinition/EHDSMedicationPrescriptionObligations
-      - StructureDefinition/EHDSMedicationDispenseObligations
-
-
-  EHDSLaboratoryObligations:
-    name: EHDS Laboratory Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to laboratory domain use cases.
-    resources:
-      - StructureDefinition/EHDSBodyStructureLaboratoryObligations
-      - StructureDefinition/EHDSConditionLaboratoryObligations
-      - StructureDefinition/EHDSDeviceLaboratoryObligations
-      - StructureDefinition/EHDSHealthProfessionalLaboratoryObligations
-      - StructureDefinition/EHDSImmunisationLaboratoryObligations
-      - StructureDefinition/EHDSLaboratoryReportObligations
-      - StructureDefinition/EHDSMedicationLaboratoryObligations
-      - StructureDefinition/EHDSMedicationAdministrationLaboratoryObligations
-      - StructureDefinition/EHDSMedicationUseLaboratoryObligations
-      - StructureDefinition/EHDSOrganisationLaboratoryObligations
-      - StructureDefinition/EHDSPatientLaboratoryObligations
-      - StructureDefinition/EHDSProcedureLaboratoryObligations
-      - StructureDefinition/EHDSRelatedPersonLaboratoryObligations
-      - StructureDefinition/EHDSServiceRequestLaboratoryObligations
-      - StructureDefinition/EHDSSpecimenLaboratoryObligations
-      - StructureDefinition/EHDSLaboratoryObservationObligations
-
-
-  EHDSImagingObligations:
-    name: EHDS Imaging Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to discharge report domain use cases.
-    resources:
-      - StructureDefinition/EHDSImagingReportObligations
-      - StructureDefinition/EHDSImagingStudyObligations
-
-  EHDSDischargeReportObligations:
-    name: EHDS Discharge Report Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to discharge report domain use cases.
-    resources:
-      - StructureDefinition/EHDSDischargeReportObligations
-      
+#  EHDSObligations:
+#    name: EHDS Obligations
+#    description: Information models derived from EHDS information models including obligations for data elements. These obligations are default obligations across use cases.
+#    resources:
+#      - StructureDefinition/EHDSMedicationObligations
+#      - StructureDefinition/EHDSMedicationUseObligations
+#      - StructureDefinition/EHDSMedicationAdministrationObligations
+#      - StructureDefinition/EHDSDosageObligations
+#      - StructureDefinition/EHDSObservationObligations
+#      - StructureDefinition/EHDSProcedureObligations
+#      - StructureDefinition/EHDSImmunisationObligations
+#      - StructureDefinition/EHDSAllergyIntoleranceObligations
+#      - StructureDefinition/EHDSPatientObligations
+#      - StructureDefinition/EHDSHealthProfessionalObligations
+#      - StructureDefinition/EHDSOrganisationObligations
+#      - StructureDefinition/EHDSDeviceObligations
+#      - StructureDefinition/EHDSDeviceUseObligations
+#      - StructureDefinition/EHDSRelatedPersonObligations
+#      - StructureDefinition/EHDSAlertObligations
+#      - StructureDefinition/EHDSAdvanceDirectiveObligations
+#      - StructureDefinition/EHDSConditionObligations
+#      - StructureDefinition/EHDSCurrentPregnancyStatusObligations
+#
+#  EHDSPatientSummaryObligations:
+#    name: EHDS Patient Summary Obligations
+#    description: Information models derived from EHDS information models including obligations for data elements. For other related models, general obligations apply.
+#    resources:
+#      - StructureDefinition/EHDSPatientSummaryObligations
+#
+#  EHDSPrescribingDispensingObligations:
+#    name: EHDS Prescribing and Dispensing Domain Obligations
+#    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to prescribing and dispensing systems (including repositories). For other related models, general obligations apply.
+#    resources:
+#      - StructureDefinition/EHDSMedicationPrescriptionObligations
+#      - StructureDefinition/EHDSMedicationDispenseObligations
+#
+#
+#  EHDSLaboratoryObligations:
+#    name: EHDS Laboratory Domain Obligations
+#    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to laboratory domain use cases.
+#    resources:
+#      - StructureDefinition/EHDSBodyStructureLaboratoryObligations
+#      - StructureDefinition/EHDSConditionLaboratoryObligations
+#      - StructureDefinition/EHDSDeviceLaboratoryObligations
+#      - StructureDefinition/EHDSHealthProfessionalLaboratoryObligations
+#      - StructureDefinition/EHDSImmunisationLaboratoryObligations
+#      - StructureDefinition/EHDSLaboratoryReportObligations
+#      - StructureDefinition/EHDSMedicationLaboratoryObligations
+#      - StructureDefinition/EHDSMedicationAdministrationLaboratoryObligations
+#      - StructureDefinition/EHDSMedicationUseLaboratoryObligations
+#      - StructureDefinition/EHDSOrganisationLaboratoryObligations
+#      - StructureDefinition/EHDSPatientLaboratoryObligations
+#      - StructureDefinition/EHDSProcedureLaboratoryObligations
+#      - StructureDefinition/EHDSRelatedPersonLaboratoryObligations
+#      - StructureDefinition/EHDSServiceRequestLaboratoryObligations
+#      - StructureDefinition/EHDSSpecimenLaboratoryObligations
+#      - StructureDefinition/EHDSLaboratoryObservationObligations
+#
+#
+#  EHDSImagingObligations:
+#    name: EHDS Imaging Domain Obligations
+#    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to discharge report domain use cases.
+#    resources:
+#      - StructureDefinition/EHDSImagingReportObligations
+#      - StructureDefinition/EHDSImagingStudyObligations
+#
+#  EHDSDischargeReportObligations:
+#    name: EHDS Discharge Report Domain Obligations
+#    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to discharge report domain use cases.
+#    resources:
+#      - StructureDefinition/EHDSDischargeReportObligations
+#      
 #
 #
 # The ImplementationGuide resource defines several other properties
