@@ -59,8 +59,8 @@ Description: "Logical model for medication prescription. A prescription contains
       * ^binding.description = "SNOMED CT"
       * ^binding.strength = #preferred
     * reason[x] 0..1 CodeableConcept or string "Reason for the substitution requirement (e.g. Biological product, Patient allergic to an excipient in alternative products, etc)."
-    * ^binding.description = "HL7 Substance Admin Substitution"
-    * ^binding.strength = #preferred
+      * ^binding.description = "HL7 Substance Admin Substitution"
+      * ^binding.strength = #preferred
     // TODO this is example binding in FHIR
 
   * numberOfRepeats 0..1 integer "Number of refills authorised - how many times the prescription item can be dispensed in addition to the original dispense. The default value is 0 (no repeats)."
