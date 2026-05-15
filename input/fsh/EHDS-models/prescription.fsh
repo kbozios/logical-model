@@ -24,7 +24,7 @@ Description: "Logical model for medication prescription. A prescription contains
     * ^definition = "Status of authorisation for dispensing the prescription items. For a multiple-item prescription, this conveys the aggregate status of the entire prescription. In case of a single-item prescription, prescriptionItem.status shall be the same as EHDSMedicationPrescription.header.status."
     * ^binding.description = "HL7 Medication Request Status"
     * ^binding.strength = #preferred
-//  * source 0..0
+  * patientInsertedData 0..0
   * statusReason[x] 0..1 CodeableConcept or string "Reason for the current status of prescription, for example the reason why the prescription was cancelled or changed from a previous state."
     * ^binding.description = "HL7 Medication Request Status Reason Codes"
     * ^binding.strength = #preferred

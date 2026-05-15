@@ -10,7 +10,8 @@ Description: """Imaging study model includes the key information about the conte
 * header.identifier 1..*
   * ^requirements = "eHN Guideline IMG (v1.1): B.1.1"
 * header.date 1..1  
-// * header.source 0..0
+* header.author only EHDSHealthProfessional or EHDSOrganisation or EHDSDevice
+* header.patientInsertedData 0..0
 * modality 0..* CodeableConcept "All of the distinct values for series' modalities"
   * ^binding.description = "DICOM CID 33 Modality"
   * ^binding.strength = #preferred

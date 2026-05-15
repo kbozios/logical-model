@@ -15,8 +15,10 @@ Description: "Logical model for medication dispensation (based on a request and 
   * ^short = "Business identifier for the dispensation."
   * ^definition = "Business identifier(s) for the dispense record."
 * header.author[x] 1..
+* header.author only EHDSHealthProfessional or EHDSOrganisation or EHDSDevice
   * ^short = "Author of the document."
   * ^definition = "The actor who issued the dispense record. Responsibility for the dispense should be traceable from this information."
+* header.patientInsertedData 0..0
 * header.date 1..1
   * ^short = "Date and time of issuing the dispense record."
   * ^definition = "Date and time of issuing the dispense record."
