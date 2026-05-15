@@ -3,12 +3,11 @@ Parent: EHDSDataSet
 Title: "Advance directive model"
 Description: """Healthcare directives concerning life or after life wishes of the patient"""
 
-//TODO Additional authors
 * header
   * author[x] ^definition = "Author of the advance directive."
-* status
-  * ^binding.description = "HL7 Consent State"
-  * ^binding.strength = #preferred
+  * status
+    * ^binding.description = "HL7 Consent State"
+    * ^binding.strength = #preferred
 * category 0..* CodeableConcept "Categories of directives related to decisions prior and after death, such as life support, resuscitation or organ donation."
   * ^requirements = "ISO IPS"
   * ^binding.description = "SNOMED CT"
