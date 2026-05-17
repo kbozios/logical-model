@@ -6,7 +6,8 @@ Description: "Current pregnancy status"
 * header.status 
   * ^short = "Status of this observation."
   * ^definition = "Status of this observation."
-
+  * ^binding.description = "HL7 Observation Status"
+  * ^binding.strength = #preferred
 // TODO - check the description and binding
 * header.author[x] 
 //  * ^short = "Author of this observation"
@@ -19,7 +20,7 @@ Description: "Current pregnancy status"
   * ^requirements = "eHN PS Guideline, ISO IPS"
 * expectedDateOfDelivery 0..1 date "Date in which the woman is due to give birth. Year, day and month are required."
   * ^requirements = "eHN PS Guideline, ISO IPS"
-* gestationalAge 0..1 Quantity "Duration of the pregnancy at this day" "Gestational age - duration of the pregnancy on the day on which the patient was asked or at the delivery. The duration can be given in weeks and/or days."
+* gestationalAge 0..1 Quantity "Duration of the pregnancy (weeks and/or days) at the time of the observation."
   * ^binding.description = "UCUM"
   * ^binding.strength = #preferred
 * note 0..1 string "Free text notes by the health professional."
