@@ -29,7 +29,7 @@ Description: "Model for common document data elements, including the common head
     * ^binding.strength = #preferred
   * documentTitle 1..1 string "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'."
   * period 0..1 Period "Time period of information covered in the document." //"Time of service that is being documented"
-  * version 0..1 string "Version of the document."
+  * version 1..1 string "Version of the document."
   * attestation 0..* Base "Document attestation details."
     * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice  "Attester who validated the document."
     * dateTime 1..1 dateTime "Date and time of the approval of the document by the attester."
