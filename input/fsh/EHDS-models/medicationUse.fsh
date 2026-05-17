@@ -5,26 +5,29 @@ Description: """Statement about a single medication as part of a medication summ
 
 * header
   * status
-    * ^short = "Status of the medication use statement (e.g. recorded)"
-    * ^definition = "Status of the medication use statement (e.g. recorded)"
-    * ^binding.description = "HL7 MedicationStatement Status Codes"
+    * ^short = "Status of the medication use statement (e.g. recorded)."
+    * ^definition = "Status of the medication use statement (e.g. recorded)."
+    * ^binding.description = "HL7 Medication Status Codes"
     * ^binding.strength = #preferred
     * ^requirements = "eHN PS Guideline, MyHealth@EU, ISO IPS"
   * author[x] 
-    * ^short = "The author of the medication use statement"
-    * ^definition = "The author of the medication use statement"
-* treatmentStatus 0..1 CodeableConcept "The current status of taking the medicine (e.g. taking, on-hold, stopped)"
+//    * ^short = "The author of the medication use statement"
+    * ^definition = "The author of the medication use statement."
+* treatmentStatus 0..1 CodeableConcept "The current status of taking the medicine (e.g. taking, on-hold, stopped)."
+// Table suggest HL7 Event Status, but this would not apply here. 
   * ^requirements = "MyHealth@EU"
 * changeType 0..* CodeableConcept "Medication use's change type in a medication summary (e.g. 'added', 'removed', 'altered'). Relevant at the time of discharge or other alteration of the active medications' list."
 * medication 1..1 EHDSMedication "Describes the medicinal product."
   * ^requirements = "eHN PS Guideline, ISO IPS, MyHealth@EU"
-* reason[x] 0..* CodeableConcept or string "Reason for the use of the medication (typically diagnosis, or a procedure)"
+* reason[x] 0..* CodeableConcept or string "Reason for the use of the medication (typically diagnosis, or a procedure)."
   * ^requirements = "eHN PS Guideline, ISO IPS, MyHealth@EU"
-* dosageInstructions 1..1 EHDSDosage "Details of how medication is/was taken or should be taken"
+  * ^binding.description = "SNOMED CT, Orphacode"
+  * ^binding.strength = #preferred
+* dosageInstructions 1..1 EHDSDosage "Details of how medication is/was taken or should be taken."
   * ^requirements = "eHN PS Guideline, ISO IPS, MyHealth@EU"
-* periodOfUse 0..1 Period "Period when the patient took, is taking or is expected to take the medication"
+* periodOfUse 0..1 Period "Period when the patient took, is taking or is expected to take the medication."
   * ^requirements = "eHN PS Guideline, ISO IPS, MyHealth@EU"
 * derivedFrom[x] 0..* EHDSMedicationPrescription or EHDSMedicationDispense or EHDSMedicationAdministration "Prescriptions, dispenses or administrations that are the basis of this medication use statement."
-* note 0..1 string "Additional information about the medication use statement"
+* note 0..1 string "Additional information about the medication use statement."
 
 
