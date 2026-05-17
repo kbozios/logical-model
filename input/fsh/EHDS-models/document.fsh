@@ -44,6 +44,3 @@ Description: "Model for common document data elements, including the common head
     * ^binding.strength = #preferred
   * custodian 0..1 EHDSOrganisation "Organisation that is in charge of maintaining the document."
 * presentedForm 0..* EHDSAttachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."
-//* knowledgeResources 0..* Base "Related documents and information sources"
-//  * externalReference 0..* RelatedArtifact "..."
-//  * relatedTo 0..* Reference "..."

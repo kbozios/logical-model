@@ -8,7 +8,7 @@ Description: "The model provides a structured way to capture information about a
     * ^definition = "Status of the encounter (e.g. discharged, discontinued, completed)."
   * author[x]
 //    * ^short = "Author (typically a health professional) who is responsible for this encounter"
-    * ^definition = "Author (typically a health professional) who is responsible for this encounter" 
+    * ^definition = "Author (typically a health professional) who is responsible for this encounter." 
 * priority 0..1 CodeableConcept "Indicates the urgency of the encounter (e.g. urgent, routine)."
   * ^binding.description = "HL7 Act Priority"
   * ^binding.strength = #preferred
@@ -20,14 +20,13 @@ Description: "The model provides a structured way to capture information about a
 * referringProfessional 0..1 EHDSHealthProfessional "Referring healthcare professional."
 * basedOn[x] 0..* EHDSCarePlan or EHDSServiceRequest "Reference to the request that initiated this encounter."
 * reason[x] 0..* CodeableConcept or EHDSCondition or EHDSProcedure or EHDSObservation or string "Reason for admission, e.g. problem, procedure or finding."
+  * ^binding.description = "ICD-10, SNOMED CT, Orphacode"
+  * ^binding.strength = #preferred
 * admission 0..1 Base "Details about the admission to a healthcare service."
   * admitter 0..1 EHDSHealthProfessional "Admitting healthcare professional."
-  * admitSource 0..1 CodeableConcept "From where the patient was admitted (e.g. physician referral, transfer)."
+  * admitSource 0..1 CodeableConcept "The type of admission indicating where the patient came from (e.g. vorn in hospital, from nursing home, physician referral, transferred from another hospital)."
     * ^binding.description = "HL7 Admit Source"
     * ^binding.strength = #preferred
-  * objectiveFindings 0..* EHDSObservation "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination."
-// TODO objectiveFindings block was moved here from Discharge Report. Check potential duplication after all the changes.
-
 * dischargeDiagnosis[x] 0..* CodeableConcept or EHDSCondition "The diagnoses at the time of discharge."
   * ^binding.description = "ICD-10, SNOMED CT, Orphacode" 
   * ^binding.strength = #preferred
@@ -41,4 +40,4 @@ Description: "The model provides a structured way to capture information about a
   * period 0..1 Period "Time period during which the patient was present at the organisation."
   * organisation 1..1 EHDSOrganisation "Organisation or part of an organisation (e.g. department) where the patient was present during the encounter."
 * subEncounter 0..* EHDSEncounter "Reference to encounters that are considered parts of this encounter."
-* note 0..1 string "Free text notes by the health professional"
+* note 0..1 string "Free text notes by the health professional."
