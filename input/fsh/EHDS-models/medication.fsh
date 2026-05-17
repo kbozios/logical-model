@@ -51,12 +51,12 @@ Description: "Logical model for prescribed/dispensed medication. The model is sh
     * ^binding.description = "Not defined"
     * ^binding.strength = #preferred
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio "Description of the characteristic value."
-  * valueCodeableConcept  
-    * ^binding.description = "Not defined"
-    * ^binding.strength = #preferred
+//  * valueCodeableConcept  
+//    * ^binding.description = "Not defined"
+//    * ^binding.strength = #preferred
   * valueQuantity
-    * ^binding.description = "UCUM"
-    * ^binding.strength = #preferred
+//    * ^binding.description = "UCUM"
+//    * ^binding.strength = #preferred
 * batch 0..1 Base "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request."
   * lotNumber 0..1 string "Batch identifier of the medicinal product."
   * expirationDate 0..1 dateTime "Batch expiration date of the medicinal product."
