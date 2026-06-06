@@ -24,7 +24,6 @@ Description: "Structured set of data elements common for all health documents."
     * insert Basic(#SHALL)
     * ^short = "Date of finalising/issuing the document."
     * ^definition = "Date of finalising/issuing the document."
-//  * source 0..0
   * language // Obligation inherited from EHDSDataSet
     * ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
     * ^definition = "Language in which the document is written. Language is expressed by the IETF language tag."
@@ -39,7 +38,7 @@ Description: "Structured set of data elements common for all health documents."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
   * period 0..1 Period "Time of service that is being documented."
-    * insert Full(#SHOULD)
+    * insert Full(#SHALL)
     * insert Basic(#SHOULD)
   * version 1..1 string "Version of the document."
     * insert Full(#SHALL)

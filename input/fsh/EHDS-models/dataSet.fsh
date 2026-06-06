@@ -27,7 +27,6 @@ Description: "Data group that is used as a template for deriving other data grou
   * status 1..1 CodeableConcept "Status of the resource."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
-    // TODO You cannot have SHOULD on a mandatory element. I changed it to SHALL for now, because it's marked with SHALL in some downstream models. An alternative would be to leave it blank (as N/A), but it would make no difference for data exchange - a resource without status will not work.
     * ^binding.description = "Defined in the individual data set."
     * ^binding.strength = #preferred
   * language 0..1 CodeableConcept "Language in which the resource is written. Language is expressed by the IETF language tag."

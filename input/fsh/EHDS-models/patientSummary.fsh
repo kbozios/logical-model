@@ -7,9 +7,7 @@ Description: """The model is a structured document designed to provide an overvi
 * header
   * ^short = "Patient summary header."
   * ^definition = "Patient summary header."
-  * period 
-    * ^short = "Time period of information covered in the document"
-    * ^definition = "Time period of information covered in the document"
+  * period 0..0
   * documentType
     * ^short = "Type of document (e.g. 60591-5 Patient summary document)."
     * ^definition = "Type of document (e.g. 60591-5 Patient summary document)."
@@ -21,7 +19,6 @@ Description: """The model is a structured document designed to provide an overvi
     * ^definition = "Categorisation of the event covered by the document (e.g. in case of a partial patient summary related to a specific context). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^binding.description = "SNOMED CT (preferred), LOINC."
     * ^binding.strength = #preferred
-//TODO eventCategory and serviceSpecialty have FULL-SHALL in the tables, but SHOULD on document level. 
 
 * alerts 0..1 Base "Section: Alerts." "Substantial alerts or warnings that health professionals should be aware of."
   * insert Full(#SHALL)
