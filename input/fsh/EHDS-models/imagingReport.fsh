@@ -24,7 +24,7 @@ Description: """Imaging report reflects the observations and interpretations of 
     * insert Basic(#SHOULD)
 * body 0..1 Base "Imaging report structured body."
   * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+  * insert Basic(#SHOULD) //TODO This is SHALL for other reports.
   * orderInformation 0..* Base "Order to which this imaging report is linked."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)

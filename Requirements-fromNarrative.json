@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "url" : "http://www.xt-ehr.eu/fhir/models/Requirements/fromNarrative",
+  "url" : "http://ehds.eu/fhir/models/Requirements/fromNarrative",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",
