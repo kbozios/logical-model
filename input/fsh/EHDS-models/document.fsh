@@ -3,13 +3,13 @@ Title: "Document model"
 Parent: EHDSDataSet
 Description: "Structured set of data elements common for all health documents."
 
-* header ^short = "Document header." //Obligation from EHDSDataSet
+* header ^short = "Document header." //Obligation inherited from EHDSDataSet
   * identifier 1..*
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^short = "Unique identifier of the document."
     * ^definition = "Unique identifier of the document."
-  * status // Obligation from EHDSDataSet
+  * status // Obligation inherited from EHDSDataSet
     * ^short = "Status of the document."
     * ^definition = "Status of the document."
     * ^binding.description = "HL7 Composition Status"
@@ -25,7 +25,7 @@ Description: "Structured set of data elements common for all health documents."
     * ^short = "Date of finalising/issuing the document."
     * ^definition = "Date of finalising/issuing the document."
 //  * source 0..0
-  * language // Obligation from EHDSDataSet
+  * language // Obligation inherited from EHDSDataSet
     * ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
     * ^definition = "Language in which the document is written. Language is expressed by the IETF language tag."
     * ^binding.description = "BCP 47"
