@@ -1,16 +1,22 @@
 Logical: EHDSLocation
 //Id: EHDSlocation
 Title: "Location model"
-Description: """Model for details and position information for a place where services are provided and resources and participants may be stored, found, contained, or accommodated."""
+Description: "EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated."
 
-//TODO
-* identifier 0..* Identifier "Location identifier"
+
+* identifier 0..* Identifier "Location identifier."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * name 0..1 string "Human-readable name of the location."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * description 0..1 string "Additional details about the location that could be displayed as further information to identify the location beyond its name."
-//* type 0..* CodeableConcept "Type of function performed at the location"
-//  * ^binding.description = "HL7 ServiceDeliveryLocationRoleType"
-//  * ^binding.strength = #preferred
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * address 0..1 EHDSAddress "Physical location address."
-* managingOrganisation 0..1 EHDSOrganisation "The organisation responsible for the provisioning and upkeep of the location"
-* partOf 0..1 EHDSOrganisation "Another location of which this location is physically a part of."
-//TODO can't understand if it's deleted or not
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* managingOrganisation 0..1 EHDSOrganisation "The organisation responsible for the provisioning and upkeep of the location."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+

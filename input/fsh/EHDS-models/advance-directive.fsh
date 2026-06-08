@@ -1,18 +1,35 @@
 Logical: EHDSAdvanceDirective
 Parent: EHDSDataSet
 Title: "Advance directive model"
-Description: """Healthcare directives concerning life or after life wishes of the patient"""
+Description: "EHDSAdvanceDirective means a documented expression of a patient's wishes, preferences or instructions regarding their healthcare, including, but not limited to, decisions concerning life-sustaining treatment or arrangements to take effect after death."
 
 * header
   * author[x] ^definition = "Author of the advance directive."
+    * insert Full(#SHALL)
+    * insert Basic(#SHOULD)
   * status
     * ^binding.description = "HL7 Consent State"
     * ^binding.strength = #preferred
+  * identifier
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * date
+    * insert Full(#SHALL)
+    * insert Basic(#SHALL) 
+// TODO patientInsertedData has Basic-SHOULD here, but SHALL in DataSet
 * category 0..* CodeableConcept "Categories of directives related to decisions prior and after death, such as life support, resuscitation or organ donation."
-  * ^requirements = "ISO IPS"
+  * insert Full(#SHALL)
+  * insert Basic(#SHOULD)
+  * ^binding.description = "SNOMED CT"
+  * ^binding.strength = #preferred
+* directiveType 0..* CodeableConcept "The type of advance directive, indicating whether it applies before or after death."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
   * ^binding.strength = #preferred
 * note 0..1 string "Textual description of the directive."
-  * ^requirements = "eHN PS and HDR Guidelines, MyHealth@EU, ISO IPS"
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD) 
 * attachment 0..1 EHDSAttachment "Source document, such as a PDF, with the living will and the patient's signature."
-  * ^requirements = "eHN HDR Guideline, ISO IPS"
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)

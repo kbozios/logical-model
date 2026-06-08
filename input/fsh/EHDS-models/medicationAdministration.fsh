@@ -1,19 +1,39 @@
 Logical: EHDSMedicationAdministration
 Parent: EHDSDataSet
 Title: "Medication administration model"
-Description: "The model covers details about single medication administrations within the scope of imaging and laboratory procedures."
+Description: "EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure."
 Characteristics: #can-be-target
 
+* header // Obligations derived from EHDSDataSet
+  * identifier
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * author[x]
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+    * ^definition = "Responsible person for recording the administration (this may be the performer)."
+  * date
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * status 
+    * ^binding.description = "HL7 MedicationAdministration Status Codes"
+    * ^binding.strength = #preferred
+    * ^definition = "Status of the administration (e.g. completed, on-hold)."
 
-* header.status ^definition = "Status of the administration (e.g. completed, on-hold)."
-  * ^binding.description = "HL7 MedicationAdministration Status Codes"
-  * ^binding.strength = #preferred
-* header.author[x] ^definition = "Responsible person for recording the administration (this may be the performer)."
 * medication 1..1 EHDSMedication "Administered medication."
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
 * occurrence[x] 1..1 dateTime or Period "Specific date/time or interval of time during which the administration took place (or did not take place)."
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
 * reason[x] 0..* CodeableConcept or EHDSCondition or EHDSObservation "Condition or observation that supports why the medication was administered."
-  * ^binding.description = "ICD-10, SNOMED CT, Orphacode"
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
   * ^binding.strength = #preferred
-//TODO ICD-10 was removed and then added back, but not here. Check if it should be included or not.
 * dosage 0..1 EHDSAdministeredDosage "Details of how medication was taken/administered."
+  * insert Full(#SHALL)
+  * insert Basic(#SHOULD)
 * note 0..1 string "Textual information about the administration."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)

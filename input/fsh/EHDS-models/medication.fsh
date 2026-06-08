@@ -1,62 +1,118 @@
 Logical: EHDSMedication
 Title: "Medication model"
-Description: "Logical model for prescribed/dispensed medication. The model is shared by statements, requests, dispensations, and administrations. Each of those may have different restrictions in a FHIR profile. The model is suitable for generic/virtual medications as well as branded/real products. The model aims to have basic alignment with ISO IDMP but it does not cover the full complexity needed for medication registries."
-* ^status = #active
+Description: "EHDSMedication means a structured set of data elements describing a medicinal product."
 
 * identifyingCode[x] 0..* CodeableConcept or Identifier "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions."
-// TODO Not sure what the binding is now, and we typically haven't had bindings for identifiers.
+// TODO I cannot create a binding for Identifier data type.
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * ^binding.description = "SNOMED CT, EMA SPOR PMS, or a national coding system or register."
+  * ^binding.strength = #preferred
 * classification 0..* CodeableConcept "Anatomical therapeutic chemical classification or another classification (e.g. narcotic/psychotropic; orphan drug)."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * ^binding.description = "WHO ATC, non-binding code-systems for other classifications"
   * ^binding.strength = #preferred
 * productName 0..1 string "Current trade name (authorised name) of the product. When medication is specified by a CodeableConcept, the name may be omitted when available as the display name of the concept."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * marketingAuthorisationHolder 0..1 Base "Marketing authorisation holder of the medicinal product. Relevant for identifying the exact product. If the product does not have a marketing authorisation, the manufacturer information may be used."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * organisationName 0..1 string "Name of the organisation holding the authorisation for marketing/manufacturing."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
   * organisationIdentifier 0..* Identifier "Identifier of the organisation and/or its physical location."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
 * doseForm 0..1 CodeableConcept "Dose form at the package level (e.g. authorised dose form), corresponding to IDMP Combined Pharmaceutical Dose Form (this includes terms from EDQM Combination Pack or Combined Dose Form lists). Dose form for a single package item is defined in item.doseForm."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * ^binding.description = "EDQM Standard Terms"
   * ^binding.strength = #preferred
 * description 0..1 string "Textual description of the product, e.g. including package description."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * item 0..* Base "A medication item. For combination packs, this can be multiple manufactured items with each item having its own dose form and ingredients+strengths defined."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * doseForm 0..1 CodeableConcept "Administrable or manufactured item dose form, depending on the type of medication definition. This should not include combined dose forms."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "EDQM Standard Terms"
     * ^binding.strength = #preferred
-  * ingredient 1..* Base "Ingredients."
+  * ingredient 0..* Base "Ingredients."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * isActive 0..1 boolean "Marks whether the ingredient is considered an active ingredient. Excipients are typically not needed, and by default only active ingredients are expected."
+      * insert Full(#SHOULD)
+      * insert Basic(#SHOULD)
     * substance 1..1 CodeableConcept "Substance."
+      * insert Full(#SHALL)
+      * insert Basic(#SHALL)
       * ^binding.description = "EMA SPOR SMS"
       * ^binding.strength = #preferred
     * strengthInfo 0..1 Base "Strength of the product - amount of substance per unit."
-      * strength 1..1 Ratio "Concentration or presentation strength, e.g '100 mg/1 ml' or '500 mg per 1 tablet'."
+      * insert Full(#SHOULD)
+      * insert Basic(#SHOULD)
+      * strength[x] 1..1 Ratio or string "Concentration or presentation strength, e.g '100 mg/1 ml' or '500 mg per 1 tablet'."
+        * insert Full(#SHALL)
+        * insert Basic(#SHALL)
       * basisOfStrengthSubstance 0..1 CodeableConcept "Substance that the strength refers to, especially when different from .item.strength.substance."
+        * insert Full(#SHOULD)
+        * insert Basic(#SHOULD)
         * ^binding.description = "EMA SPOR SMS"
         * ^binding.strength = #preferred
   * unitOfPresentation 0..1 CodeableConcept "Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "EDQM Standard Terms"
     * ^binding.strength = #preferred
   * containedQuantity 0..1 Ratio "Manufactured item quantity per one item (3 ml / 1 vial)."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "UCUM for units of measure. EDQM Standard Terms for units of presentation."
     * ^binding.strength = #preferred
   * amount 0..1 Quantity "Number of such items in this product (5 vials). The combined amount of all items will be considered to be the total package size."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "UCUM for units of measure. EDQM Standard Terms for units of presentation."
     * ^binding.strength = #preferred
   * packageType 0..1 CodeableConcept "Type of package of the medication item."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "EDQM Standard Terms for packaging."
     * ^binding.strength = #preferred
 * device 0..* Base "Administration device included in the product. Devices that are not inside the medication package are excluded."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * deviceQuantity 1..1 Quantity "Number of devices."
+    * insert Full(#SHALL)
+    * insert Basic(#SHALL)
   * device[x] 1..1 CodeableConcept or EHDSDevice "Device coded."
-  //TODO The table suggests binding to SNOMED, but medicines agencies would have this data available in EDQM.
+    * insert Full(#SHALL)
+    * insert Basic(#SHALL)
+    * ^binding.description = "EDQM Standard Terms"
+    * ^binding.strength = #preferred
 * characteristic 0..* Base "Additional features of the product (e.g. reimbursable, sugar-free, easy-open cap, score-lined). It is expected that implementers will define a valueset supporting their use cases."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * type 1..1 CodeableConcept "A code expressing the type of characteristic."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "Not defined"
     * ^binding.strength = #preferred
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio "Description of the characteristic value."
-//  * valueCodeableConcept  
-//    * ^binding.description = "Not defined"
-//    * ^binding.strength = #preferred
-  * valueQuantity
-//    * ^binding.description = "UCUM"
-//    * ^binding.strength = #preferred
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+    * ^binding.description = "UCUM for units of measure"
+    * ^binding.strength = #preferred
 * batch 0..1 Base "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
   * lotNumber 0..1 string "Batch identifier of the medicinal product."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
   * expirationDate 0..1 dateTime "Batch expiration date of the medicinal product."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)

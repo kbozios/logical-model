@@ -1,6 +1,6 @@
 Logical: EHDSAddress
 Title: "Address model"
-Description: """EHDS refined base model for Address structure"""
+Description: """EHDSAddress means the structured set of data elements identifying a geographical or postal location."""
 
 * use 0..1 CodeableConcept "Purpose of the address. If this attribute is not present, the address is assumed to be the default address useful for any purpose."
   * insert Full(#SHOULD)
