@@ -209,39 +209,40 @@ groups:
     name: EHDS Common Logical Models
     description: Information models shared across different priority categories.
     resources:
-      - StructureDefinition/EHDSMedication
-      - StructureDefinition/EHDSMedicationUse
-      - StructureDefinition/EHDSMedicationAdministration
-      - StructureDefinition/EHDSDosage
-      - StructureDefinition/EHDSObservation
-      - StructureDefinition/EHDSLaboratoryObservation
-      - StructureDefinition/EHDSProcedure
-      - StructureDefinition/EHDSImmunisation
-      - StructureDefinition/EHDSAllergyIntolerance
-      - StructureDefinition/EHDSPatient
-      - StructureDefinition/EHDSHealthProfessional
-      - StructureDefinition/EHDSOrganisation
-      - StructureDefinition/EHDSDevice
-      - StructureDefinition/EHDSDeviceUse
-      - StructureDefinition/EHDSRelatedPerson
-      - StructureDefinition/EHDSAlert
+      - StructureDefinition/EHDSAddress
+      - StructureDefinition/EHDSAdministeredDosage
       - StructureDefinition/EHDSAdvanceDirective
+      - StructureDefinition/EHDSAlert
+      - StructureDefinition/EHDSAllergyIntolerance
+      - StructureDefinition/EHDSAttachment
+      - StructureDefinition/EHDSBodyStructure
+      - StructureDefinition/EHDSCarePlan
       - StructureDefinition/EHDSCondition
       - StructureDefinition/EHDSCurrentPregnancyStatus
-      - StructureDefinition/EHDSAddress
-      - StructureDefinition/EHDSHumanName
-      - StructureDefinition/EHDSTelecom
-      - StructureDefinition/EHDSEndpoint
-      - StructureDefinition/EHDSBodyStructure
-      - StructureDefinition/EHDSAdministeredDosage
-      - StructureDefinition/EHDSAttachment
-      - StructureDefinition/EHDSCarePlan
+      - StructureDefinition/EHDSDevice
+      - StructureDefinition/EHDSDeviceUse
+      - StructureDefinition/EHDSDosage
       - StructureDefinition/EHDSEncounter
+      - StructureDefinition/EHDSEndpoint
+      - StructureDefinition/EHDSHealthProfessional
+      - StructureDefinition/EHDSHumanName
+      - StructureDefinition/EHDSImmunisation
+      - StructureDefinition/EHDSLaboratoryObservation
       - StructureDefinition/EHDSLocation
-      - StructureDefinition/EHDSServiceRequest
-      - StructureDefinition/EHDSTravelHistory
-      - StructureDefinition/EHDSSpecimen
+      - StructureDefinition/EHDSMedication
+      - StructureDefinition/EHDSMedicationAdministration
+      - StructureDefinition/EHDSMedicationUse
+      - StructureDefinition/EHDSObservation
+      - StructureDefinition/EHDSOrganisation
+      - StructureDefinition/EHDSPatient
       - StructureDefinition/EHDSPregnancyHistory
+      - StructureDefinition/EHDSProcedure
+      - StructureDefinition/EHDSRelatedPerson
+      - StructureDefinition/EHDSServiceRequest
+      - StructureDefinition/EHDSSpecimen
+      - StructureDefinition/EHDSTelecom
+      - StructureDefinition/EHDSTravelHistory
+      
 
   EHDSMetadataModels:
     name: EHDS Metadata Models
