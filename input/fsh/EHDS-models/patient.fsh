@@ -1,6 +1,6 @@
 Logical: EHDSPatient
 Title: "Patient model"
-Description: """Model for information about a patient (subject of care)."""
+Description: "EHDSPatient means a structured set of data elements describing a subject of care."
 
 * identifier 1..* Identifier "A stable identifier of the patient that is unique within a defined scope, the use of temporary generated identifiers is not permitted. In addition to the mandatory attributes listed below, other attributes compliant with the HL7 FHIR Identifier structure may be included."
   * insert Full(#SHALL)

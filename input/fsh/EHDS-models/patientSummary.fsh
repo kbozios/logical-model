@@ -1,7 +1,7 @@
 Logical: EHDSPatientSummary
 Title: "Patient summary model"
 Parent: EHDSDocument
-Description: """The model is a structured document designed to provide an overview of a patient’s most important health information. The model aims to be compatible with the ISO International Patient Summary standard."""
+Description: "The model is a structured document designed to provide an overview of a patient’s most important health information. The model aims to be compatible with the ISO International Patient Summary standard."
 
 
 * header

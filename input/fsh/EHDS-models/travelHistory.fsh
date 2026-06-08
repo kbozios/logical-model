@@ -1,7 +1,7 @@
 Logical: EHDSTravelHistory
 Parent: EHDSDataSet
 Title: "Travel history model"
-Description: "Relevant information about the patient's recent travel history, for one visit."
+Description: "EHDSTravelHistory means a structured set of data elements describing a patient's past travel to a specific country."
 
 * header // Obligations derived from EHDSDataSet
   * identifier

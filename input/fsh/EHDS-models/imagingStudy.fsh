@@ -1,7 +1,7 @@
 Logical: EHDSImagingStudy
 Parent: EHDSDataSet
 Title: "Imaging study model"
-Description: """Imaging study model includes the key information about the content of an imaging study. It does not include image pixels but includes location pointers to its image content and organises this information according to the well-established model of an imaging study made of one or more series and each series made of instances or images. Composed of a set of data (DICOM KOS) that facilitates the location of all available images."""
+Description: "EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide."
 
 * header //Obligation inherited from EHDSDataSet
   * identifier 1..*

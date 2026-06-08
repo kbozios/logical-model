@@ -193,38 +193,16 @@ menu:
 #
 groups:
 
-  EHDSPsLogicalModels:
-    name: EHDS Patient Summary Logical Models
-    description: Information Models for implementing EEHRxF Patient Summary under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements. The Patient Summary is currently being defined in a [separate branch](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/branches/patient-summary/artifacts.html#ehds-patient-summary-logical-models)
+  EHDSPriorityCategories:
+    name: EHDS Priority Categories
+    description: The models representing EHDS priority categories.
     resources:
       - StructureDefinition/EHDSPatientSummary
-
-  EHDSPrescriptionDispenseLogicalModels:
-    name: EHDS ePrescription and eDispense Logical Models
-    description: Information Models for implementing EEHRxF services for medication prescription and dispense services.
-    resources:
       - StructureDefinition/EHDSMedicationPrescription
       - StructureDefinition/EHDSMedicationDispense
-#      - StructureDefinition/EHDSDispenseDecline
-
-  EHDSMedicalTestResultAndReportLogicalModels:
-    name: EHDS Medical Test Result and Report Domain Logical Models
-    description: Information Models for implementing EEHRxF services in the medical test results (incl laboratory) domain under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."
-    resources:
       - StructureDefinition/EHDSMedicalTestResultAndReport
-      - StructureDefinition/EHDSLaboratoryObservation
-
-  EHDSImagingLogicalModels:
-    name: EHDS Imaging Domain Logical Models
-    description: Information Models for implementing EEHRxF services in the imaging domain under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."
-    resources:
       - StructureDefinition/EHDSImagingReport
       - StructureDefinition/EHDSImagingStudy
-
-  EHDSDRLogicalModels:
-    name: EHDS Discharge Report Domain Logical Models
-    description: Information models for implementing EEHRxF Discharge report under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."
-    resources:
       - StructureDefinition/EHDSDischargeReport
 
   EHDSCommonLogicalModels:
@@ -236,6 +214,7 @@ groups:
       - StructureDefinition/EHDSMedicationAdministration
       - StructureDefinition/EHDSDosage
       - StructureDefinition/EHDSObservation
+      - StructureDefinition/EHDSLaboratoryObservation
       - StructureDefinition/EHDSProcedure
       - StructureDefinition/EHDSImmunisation
       - StructureDefinition/EHDSAllergyIntolerance
@@ -262,10 +241,21 @@ groups:
       - StructureDefinition/EHDSServiceRequest
       - StructureDefinition/EHDSTravelHistory
       - StructureDefinition/EHDSSpecimen
-      - StructureDefinition/EHDSDataSet
-      - StructureDefinition/EHDSDocument
       - StructureDefinition/EHDSPregnancyHistory
 
+  EHDSMetadataModels:
+    name: EHDS Metadata Models
+    description: Information models acting as templates for specialised models.
+    resources:
+      - StructureDefinition/EHDSDataSet
+      - StructureDefinition/EHDSDocument
+
+  EHDSSupportLevels:
+    name: Support Levels
+    description: Support levels for obligations defined as ActorDefinitions. 
+    resources:
+      - ActorDefinition/actor-full
+      - ActorDefinition/actor-basic
 
 #      
 #
