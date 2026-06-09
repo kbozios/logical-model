@@ -16,7 +16,7 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Basic(#SHOULD)
   * status 
     * ^binding.description = "HL7 Observation Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * subject
     * ^definition = "Patient who is receiving health care. This patient might be different from the direct subject of the observation."
   * directSubject[x] 0..1 EHDSPatient or EHDSLocation or EHDSDevice or string "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations."
@@ -29,7 +29,7 @@ Description: "EHDSObservation means a structured set of data elements describing
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "SNOMED CT (preferred), LOINC, NPU"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * originalName 0..1 string "Original (conventional) name of the observation as used in the local laboratory or clinical system."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -37,7 +37,7 @@ Description: "EHDSObservation means a structured set of data elements describing
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)  
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * specimen 0..1 EHDSSpecimen "Specimen used for this observation."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -57,19 +57,19 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "UCUM for units, SNOMED CT for coded results"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * certainty 0..1 Base "Measurement certainty information type and interval if needed about the observation result." //TODO element name has changed in a dangerous way
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * value 1..1 decimal "The numerical value of the measurement certainty." //TODO certainty/uncertainty
     * type 0..1 CodeableConcept "Probability Distribution Type for certainty." //TODO certainty/uncertainty
       * ^binding.description = "HL7 Probability Distribution Type"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
   * dataAbsentReason 0..1 CodeableConcept "Provides a reason why the expected value in the element Observation.result.value[x] is missing."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)    
     * ^binding.description = "HL7 Data absent reason"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 * referenceRange 0..* Base "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)   
@@ -77,32 +77,32 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
     * ^binding.description = "UCUM"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * high 0..1 Quantity "High limit of the reference range."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
     * ^binding.description = "UCUM"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * normalValue 0..1 CodeableConcept "Normal value, if relevant for the reference range."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * type 0..1 CodeableConcept "Type of reference range."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
     * ^binding.description = "HL7 Observation Reference Range Meaning Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * appliesTo 0..* CodeableConcept "Codes to indicate the target population this reference range applies to."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * age 0..1 Range "Age range to which this reference range applies if applicable."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
     * ^binding.description = "UCUM"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * text 0..1 string "Text based reference range."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
@@ -110,7 +110,7 @@ Description: "EHDSObservation means a structured set of data elements describing
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)   
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Free text notes by the health professional."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)   
@@ -122,7 +122,7 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Full(#SHALL)
     * insert Basic(#SHALL)   
     * ^binding.description = "SNOMED CT (preferred), LOINC, NPU"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * originalName 0..1 string "Original (user-friendly) name of the observation as used in the local laboratory or clinical system."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)   
@@ -133,7 +133,7 @@ Description: "EHDSObservation means a structured set of data elements describing
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)   
       * ^binding.description = "UCUM for units, SNOMED CT for coded results"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * certainty 0..1 Base "Measurement certainty information type and interval if needed about the observation result." //TODO certainty/uncertainty
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)   
@@ -144,12 +144,12 @@ Description: "EHDSObservation means a structured set of data elements describing
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
         * ^binding.description = "HL7 Probability Distribution Type"
-        * ^binding.strength = #preferred
+        * ^binding.strength = #required
     * dataAbsentReason 0..1 CodeableConcept "Provides a reason why the expected value in the element component.result.value[x] is missing."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
       * ^binding.description = "HL7 Data Absent Reason"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
   * referenceRange 0..* Base "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -157,32 +157,32 @@ Description: "EHDSObservation means a structured set of data elements describing
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * high 0..1 Quantity "High limit of the reference range."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * normalValue 0..1 CodeableConcept "Normal value, if relevant for the reference range."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "SNOMED CT"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * type 0..1 CodeableConcept "Type of reference range."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "HL7 Observation Reference Range Meaning Codes"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * appliesTo 0..* CodeableConcept "Codes to indicate the target population this reference range applies to."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "SNOMED CT"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * age 0..1 Range "Age range to which this reference range applies if applicable."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * text 0..1 string "Text based reference range."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
@@ -190,7 +190,7 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT, HL7 ObservationInterpretation"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * derivedFrom[x] 0..* EHDSObservation or EHDSLaboratoryObservation or EHDSImagingStudy "Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."
   * insert Full(#SHOULD)

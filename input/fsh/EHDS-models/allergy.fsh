@@ -18,13 +18,13 @@ Description: """EHDSAllergyIntolerance means a structured set of data elements d
   * status ^short = "Current status of the allergy or intolerance, for example, whether it is active, inactive, or resolved."
     * ^definition = "Current status of the allergy or intolerance, for example, whether it is active, inactive, or resolved."
     * ^binding.description = "HL7 AllergyIntolerance Clinical Status Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * agentOrAllergen 1..1 CodeableConcept "Code that identifies the allergy or intolerance." 
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "ATC, EMA SPOR SMS, SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
   * ^comment = "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., Latex), an allergy or intolerance condition (e.g., Latex allergy), or a negated/excluded code for a specific substance or class (e.g., No latex allergy). It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'."
 
 * note 0..1 string "Free text notes by the health professional."
@@ -35,13 +35,13 @@ Description: """EHDSAllergyIntolerance means a structured set of data elements d
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Allergy Intolerance Criticality"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 
 * certainty 0..1 CodeableConcept "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Diagnostic and /or clinical evidence of condition"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Allergy Intolerance Verification Codes"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 
 * onsetDate 0..1 dateTime "When allergy or intolerance was identified."
   * insert Full(#SHOULD)
@@ -63,13 +63,13 @@ Description: """EHDSAllergyIntolerance means a structured set of data elements d
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
   * severity 0..1 CodeableConcept "Severity of the clinical manifestation of the allergic reaction."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL7 AllergyIntolerance Severity"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
   * onset 0..1 dateTime "Date and time of the onset of the reaction."
     * insert Full(#SHALL)

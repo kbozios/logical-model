@@ -17,7 +17,7 @@ Characteristics: #can-be-target
     * insert Basic(#SHOULD)
   * status 
     * ^binding.description = "HL7 MedicationAdministration Status Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     * ^definition = "Status of the administration (e.g. completed, on-hold)."
 
 * medication 1..1 EHDSMedication "Administered medication."
@@ -30,7 +30,7 @@ Characteristics: #can-be-target
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * dosage 0..1 EHDSAdministeredDosage "Details of how medication was taken/administered."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)

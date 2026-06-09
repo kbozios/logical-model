@@ -14,18 +14,18 @@ Description: "EHDSDosage means a structured set of data elements describing the 
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
   * doseAndRate 0..* Base "Amount of medication administered per one dose (= one timing)."
-    * insert Full(#SHALL) // TODO This is SHOULD in the tables, but it looks like a technical error, since repeat SHALL would have no point if this was SHOULD
+    * insert Full(#SHOULD) // TODO This is SHOULD in the tables, but it looks like a technical error, since repeat SHALL would have no point if this was SHOULD
     * insert Basic(#SHOULD)
     * dose[x] 0..1 Quantity or Range "Amount of medication per one dose (1 tablet, 2-3 tablets, 20ml)."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM (units of measurement), EDQM Standard Terms (units of presentation)"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * rate[x] 0..1 Quantity or Ratio "Amount of medication per time period (e.g. 100mg per 1 hour). When rate is provided per 1 time unit, Quantity data type can be used with a suitable unit (e.g. mg/h, ug/min)."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM (units of measurement), EDQM Standard Terms (units of presentation)"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
   * repeat 0..1 Base "Repetition of the administration."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -33,12 +33,12 @@ Description: "EHDSDosage means a structured set of data elements describing the 
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * duration 0..1 Quantity "Duration of administration (e.g. '5 minutes', '1 hour')."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "UCUM"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * frequency 0..1 Base "Frequency of intake/administration."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
@@ -49,7 +49,7 @@ Description: "EHDSDosage means a structured set of data elements describing the 
         * insert Full(#SHALL)
         * insert Basic(#SHOULD)
         * ^binding.description = "UCUM"
-        * ^binding.strength = #preferred
+        * ^binding.strength = #required
     * dayOfWeek 0..* CodeableConcept "The day of the week of administration, e.g Mon, Tue, etc."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
@@ -60,7 +60,7 @@ Description: "EHDSDosage means a structured set of data elements describing the 
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "HL7 Event Timing"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
   * asNeeded 0..1 boolean "Take as needed."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -71,4 +71,4 @@ Description: "EHDSDosage means a structured set of data elements describing the 
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "EDQM Standard Terms"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required

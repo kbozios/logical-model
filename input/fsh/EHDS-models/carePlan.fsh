@@ -21,7 +21,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   * status //TODO not in the table, but inherited with obligations from EHDSDataSet anyway.
     * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
     * ^binding.description = "HL7 Request Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 * title 0..1 string "Human-friendly name for the care plan."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -35,7 +35,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * activity 0..* Base "The details of the proposed activity represented in a specific resource."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -43,7 +43,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 * goal 0..* Base "Describes the intended objective(s) of carrying out the care plan."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -51,6 +51,6 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^binding.description = "Not defined"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 // TODO activity and goal modelled differently from the table, because the Backbone element (Base) cannot have [x]. Tried to keep the Base element (requested by the FHIR groups) and model the [x] below it.

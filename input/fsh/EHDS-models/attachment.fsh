@@ -7,12 +7,12 @@ Description: "EHDSAttachment means a structured set of data elements describing 
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "BCP 13"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * language 0..1 CodeableConcept "Human language of the content"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "BCP 47"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * data 0..1 base64Binary "The actual data of the attachment - a sequence of bytes, base64 encoded."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)

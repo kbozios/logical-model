@@ -9,7 +9,7 @@ Description: "EHDSAdvanceDirective means a documented expression of a patient's 
     * insert Basic(#SHOULD)
   * status
     * ^binding.description = "HL7 Consent State"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * identifier
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -21,12 +21,12 @@ Description: "EHDSAdvanceDirective means a documented expression of a patient's 
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * directiveType 0..* CodeableConcept "The type of advance directive, indicating whether it applies before or after death."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Textual description of the directive."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD) 

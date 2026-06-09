@@ -9,12 +9,12 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Specimen Status"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * type 0..1 CodeableConcept "The kind of material that forms the specimen."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * specimenSource[x] 0..1 EHDSPatient or EHDSLocation or EHDSDevice "The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -26,7 +26,7 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
   * insert Basic(#SHOULD)
 //* combined 0..1 CodeableConcept "This element signifies if the specimen is part of a group or pooled."
 //  * ^binding.description = "HL7 specimen-combined"
-//  * ^binding.strength = #preferred
+//  * ^binding.strength = #required
 * collection 0..* Base "Collection details."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -44,7 +44,7 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * device 0..1 EHDSDevice "Device used to perform specimen collection."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -67,7 +67,7 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Specimen Condition"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

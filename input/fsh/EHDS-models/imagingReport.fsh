@@ -15,7 +15,7 @@ Description: """Imaging report reflects the observations and interpretations of 
     * ^short = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^definition = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
       * ^binding.description = "DICOM CID 33 Modality (preferred), SNOMED CT"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
   * accessionNumber 0..* Identifier "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -41,7 +41,7 @@ Description: """Imaging report reflects the observations and interpretations of 
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * ^binding.description = "SNOMED CT (preferred), ICD-10"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * clinicalQuestion 0..1 string "Specification of clinical question (goal of the investigation) to be answered by the imaging investigation."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
@@ -64,7 +64,6 @@ Description: """Imaging report reflects the observations and interpretations of 
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^comment = "A specimen (not attached to a body) can be used for diagnostic, forensic and medical research purposes."
-  // TODO check whether serviceRequest is in or out. Add back if necessary.
   * exposureInformation 0..1 Base "Information on total exposure during the imaging investigation to ionising radiation."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -82,21 +81,21 @@ Description: """Imaging report reflects the observations and interpretations of 
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
         * ^binding.description = "DICOM Modality"
-        * ^binding.strength = #preferred
+        * ^binding.strength = #required
       * bodySite 0..1 EHDSBodyStructure "Body part investigated."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
-      * numberOfSeries 0..1 integer "Number of series in the study." //TODO is this in the right plce?
+      * numberOfSeries 0..1 integer "Number of series in the study."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
   * examinationReport 1..1 Base "Examination report content."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
     * modality 1..* CodeableConcept "Imaging modality used during imaging investigation (DICOM CID029)."
       * insert Full(#SHALL)
-      * insert Basic(#SHALL)
+      * insert Basic(#SHOULD)
       * ^binding.description = "DICOM Modality"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * bodySite 0..* EHDSBodyStructure "Body part investigated."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
@@ -117,7 +116,7 @@ Description: """Imaging report reflects the observations and interpretations of 
       * insert Basic(#SHOULD)
       * impression 1..1 string "Narrative description of the clinical conclusion (impression)."
         * insert Full(#SHALL)
-        * insert Basic(#SHALL)
+        * insert Basic(#SHOULD)
       * conditionOrFinding[x] 0..* EHDSCondition or EHDSObservation "Condition or finding from imaging investigation."
         * insert Full(#SHALL)
         * insert Basic(#SHOULD)

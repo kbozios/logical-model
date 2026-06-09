@@ -6,11 +6,11 @@ Description: """Model for observation performed by laboratory"""
 
 /** type
   * ^binding.description = "SNOMED CT (preferred), LOINC, NPU"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * component
   * code
     * ^binding.description = "SNOMED CT (preferred), LOINC, NPU"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 */
 * triggeredBy[x] 0..* EHDSLaboratoryObservation or EHDSObservation "References to the observation(s) that triggered the performance of this observation."
   * insert Full(#SHOULD)

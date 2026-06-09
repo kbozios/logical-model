@@ -19,13 +19,13 @@ Description: "EHDSCondition means a structured set of data elements describing a
     * ^short = "Status of the condition/problem (e.g. active, resolved, inactive, etc)."
     * ^definition = "Status of the condition/problem (e.g. active, resolved, inactive, etc)."
     * ^binding.description = "HL7 Condition Clinical Status Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * code 1..1 CodeableConcept "Code identifying the condition, problem or diagnosis."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, ICD-O, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * onsetDate 0..1 dateTime "Estimated or actual date the problem/condition began."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -36,7 +36,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * resolutionCircumstances 0..1 string "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -44,7 +44,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * bodySite 0..* EHDSBodyStructure "The anatomical location including laterality where this condition manifests itself."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -52,12 +52,12 @@ Description: "EHDSCondition means a structured set of data elements describing a
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "Not defined"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * diagnosisAssertionStatus 0..1 CodeableConcept "Assertion about the certainty associated with a diagnosis. Diagnostic and/or clinical evidence of condition."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Condition Verification Status"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * specialistContact 0..* EHDSHealthProfessional "Health Professional who may be specifically related to the problem, as a preferred contact."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

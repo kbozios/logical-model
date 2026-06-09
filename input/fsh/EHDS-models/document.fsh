@@ -13,7 +13,7 @@ Description: "Structured set of data elements common for all health documents."
     * ^short = "Status of the document."
     * ^definition = "Status of the document."
     * ^binding.description = "HL7 Composition Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * author[x] 1..* 
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
@@ -28,12 +28,12 @@ Description: "Structured set of data elements common for all health documents."
     * ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
     * ^definition = "Language in which the document is written. Language is expressed by the IETF language tag."
     * ^binding.description = "BCP 47"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * documentType 1..1 CodeableConcept "Type of document (e.g. 60591-5 Patient summary document)."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^binding.description = "LOINC"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * documentTitle 1..1 string "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
@@ -65,12 +65,12 @@ Description: "Structured set of data elements common for all health documents."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "LOINC, SNOMED CT, DICOM-CID 33 Modality"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * serviceSpecialty 0..* CodeableConcept "Additional details about where the content was created (e.g. clinical specialty)."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * custodian 0..1 EHDSOrganisation "Organisation that is in charge of maintaining the document."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -78,7 +78,7 @@ Description: "Structured set of data elements common for all health documents."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "ISO 3166-1 alpha-2"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 * presentedForm 0..* EHDSAttachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)

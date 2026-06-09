@@ -18,13 +18,13 @@ Description: "EHDSProcedure means a structured set of data elements describing a
     * ^short = "Status of the procedure (e.g. completed, on hold, stopped)."
     * ^definition = "Status of the procedure (e.g. completed, on hold, stopped)."
     * ^binding.description = "HL7 Event Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * code 1..1 CodeableConcept "Concept code and display name identifying the type of procedure."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * procedureDate[x] 0..1 dateTime or Period "Date and time of the procedure or interval of its performance."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -38,17 +38,17 @@ Description: "EHDSProcedure means a structured set of data elements describing a
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * outcome 0..1 CodeableConcept "The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * complication 0..* CodeableConcept "Complication that occurred during the procedure, or in the immediate post-procedure period."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * deviceUsed 0..* EHDSDevice "Device used to perform the procedure."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

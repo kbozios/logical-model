@@ -21,7 +21,7 @@ Description: "EHDSHealthProfessional means a structured set of data elements des
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT (preferred), ISCO-08"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * organisation 0..1 EHDSOrganisation "The organisation where this role is available."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)  
@@ -29,4 +29,4 @@ Description: "EHDSHealthProfessional means a structured set of data elements des
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required

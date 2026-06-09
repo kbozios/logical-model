@@ -35,14 +35,14 @@ Description: "EHDSDevice means a structured set of data elements describing a me
 * modelNumber 0..1 string "The manufacturer's model number for the device."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* version 0..* string "The actual design of the device and/or software version running on the device." //TODO SHOULD + 1..* does not work together. Since version information is often not applicable or available for implanted devices etc, leaving it 0..1 for now.
-  * insert Full(#SHOULD)
+* version 1..* string "The actual design of the device and/or software version running on the device."
+  * insert Full(#SHALL)
   * insert Basic(#SHOULD)
 * type 0..* CodeableConcept "Device type."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), EMDN"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Device note and/or comment."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

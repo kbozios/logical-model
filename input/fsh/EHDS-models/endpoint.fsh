@@ -9,7 +9,7 @@ Description: "EHDSEndpoint means a structured set of data elements describing th
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "HL7 Endpoint Status"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * connectionType 1..* CodeableConcept "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
@@ -26,7 +26,7 @@ Description: "EHDSEndpoint means a structured set of data elements describing th
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "BCP 13"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * profileCanonical 0..* uri "The technical profile that is expected at this endpoint. It describes the resources that are handled, or even simply which resource types."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)

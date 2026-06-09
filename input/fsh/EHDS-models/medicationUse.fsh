@@ -18,7 +18,7 @@ Description: "EHDSMedicationUse means a structured set of data elements describi
     * ^short = "Status of the medication use statement (e.g. recorded)."
     * ^definition = "Status of the medication use statement (e.g. recorded)."
     * ^binding.description = "HL7 Medication Status Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     * ^requirements = "eHN PS Guideline, MyHealth@EU, ISO IPS"
 
 //* treatmentStatus 0..1 CodeableConcept "The current status of taking the medicine (e.g. taking, on-hold, stopped)."
@@ -30,7 +30,7 @@ Description: "EHDSMedicationUse means a structured set of data elements describi
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * dosageInstructions 1..1 EHDSDosage "Details of how medication is/was taken or should be taken."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

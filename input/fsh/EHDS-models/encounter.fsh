@@ -23,12 +23,12 @@ Description: "EHDSEncounter means a structured set of data elements describing a
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Act Priority"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * class 1..1 CodeableConcept "Class of the encounter (inpatient, ambulatory, virtual)."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "HL7 Act Encounter Code"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * period 1..1 Period "The actual start and end time of the encounter."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
@@ -45,7 +45,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * admission 0..1 Base "Details about the admission to a healthcare service."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -56,12 +56,12 @@ Description: "EHDSEncounter means a structured set of data elements describing a
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL7 Admit Source"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 * dischargeDiagnosis[x] 0..* CodeableConcept or EHDSCondition "The diagnoses at the time of discharge."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode" 
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * dischargeDestination 0..1 Base "Location or organisation to which the patient is going after discharge."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -69,7 +69,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL7 Discharge Disposition" 
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     // TODO This is example level binding in FHIR, will we keep those?
   * location[x] 0..1 EHDSOrganisation or string "The location or organisation (including contact details)."
     * insert Full(#SHOULD)

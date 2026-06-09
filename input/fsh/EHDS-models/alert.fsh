@@ -16,7 +16,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
     * insert Basic(#SHOULD)
   * status
   * ^binding.description = "HL7 Flag Status"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
   * ^short = "Current status of the alert."
   * ^definition = """Current status of the alert, indicates whether this alert is active and needs to be displayed to a user, or whether it is no longer needed."""
 
@@ -24,7 +24,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * description 0..1 Narrative "Narrative representation of the alert."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD) 
@@ -32,7 +32,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Flag Priority Code"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * period 0..1 Period "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)

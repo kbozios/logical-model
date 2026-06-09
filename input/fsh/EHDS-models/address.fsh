@@ -6,12 +6,12 @@ Description: """EHDSAddress means the structured set of data elements identifyin
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Address Use"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * type 0..1 CodeableConcept "Distinguishes between physical addresses (those that can be visited) and mailing addresses. Most addresses are both."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Address Type"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * text 0..1 string "Text representation of the address."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -34,4 +34,4 @@ Description: """EHDSAddress means the structured set of data elements identifyin
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description =  "ISO 3166-1 alpha-2"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required

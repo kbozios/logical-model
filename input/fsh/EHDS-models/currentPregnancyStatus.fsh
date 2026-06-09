@@ -18,13 +18,13 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
     * ^short = "Status of this observation."
     * ^definition = "Status of this observation."
     * ^binding.description = "HL7 Observation Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * currentPregnancyStatus 1..1 CodeableConcept "Pregnancy status of the patient, e.g. pregnant, not pregnant, possible pregnancy."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * dateOfStatus 0..1 dateTime "Effective date of the current pregnancy status."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -35,7 +35,7 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "UCUM"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Free text notes by the health professional."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

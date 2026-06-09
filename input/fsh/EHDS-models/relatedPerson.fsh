@@ -10,7 +10,7 @@ Description: "EHDSRelatedPerson means a structured set of data elements describi
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
   * ^binding.description = "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
   * value 1..1 
     * ^short = "The value that is unique."
     * insert Full(#SHALL)
@@ -29,7 +29,7 @@ Description: "EHDSRelatedPerson means a structured set of data elements describi
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)  
   * ^binding.description = "HL7 Patient Relationship Type"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * address 0..* EHDSAddress "Address of the person."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

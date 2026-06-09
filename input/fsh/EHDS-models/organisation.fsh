@@ -9,7 +9,7 @@ Description: "EHDSOrganisation means a structured set of data elements describin
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Organisation Type"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * name 0..1 string "Organisation name."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)

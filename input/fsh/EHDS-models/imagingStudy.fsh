@@ -10,10 +10,10 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
     * ^definition = "Identifiers for the imaging study such as DICOM Study Instance UID. If one or more series elements are present in the imaging study, then there shall be one DICOM Study UID identifier."
   * date 1..1  
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * status // Obligation inherited from EHDSDataSet
     * ^binding.description = "HL7 Imaging Study Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * author[x] only EHDSHealthProfessional or EHDSOrganisation or EHDSDevice
   * author[x] 1..*
     * insert Full(#SHALL)
@@ -26,7 +26,7 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "DICOM CID 33 Modality"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * bodySite 0..* EHDSBodyStructure "All of the distinct values for series' examined body parts."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -59,15 +59,15 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
   * insert Basic(#SHOULD)
   * seriesUid 1..1 Identifier "DICOM Series Instance UID for the series."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * number 0..1 integer "Numeric identifier of this series."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
   * seriesModality 1..1 CodeableConcept "Acquisition modality used for this series."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
     * ^binding.description = "DICOM CID 29 Acquisition Modality"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * description 0..1 string "A short human readable summary of the series."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -92,10 +92,10 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
       * insert Basic(#SHOULD)
     * instanceUid 1..1 Identifier "DICOM SOP Instance UID"
       * insert Full(#SHALL)
-      * insert Basic(#SHALL)
+      * insert Basic(#SHOULD)
     * sopClass 1..1 uri "SOP class - DICOM class type."
       * insert Full(#SHALL)
-      * insert Basic(#SHALL)
+      * insert Basic(#SHOULD)
     * instanceNumber 0..1 integer "The number of this instance in the series."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
@@ -106,10 +106,10 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
       * flag 1..1 CodeableConcept "Reason for flagging the image as significant."
-        * insert Full(#SHALL)
-        * insert Basic(#SHALL)
+        * insert Full(#SHALL) //TODO SHOULD in the table
+        * insert Basic(#SHOULD)
         * ^binding.description = "DICOM PS3.16"
-        * ^binding.strength = #preferred
+        * ^binding.strength = #required
       * reason 0..1 string "Textual reason for flagging the image as significant."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)

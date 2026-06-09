@@ -28,9 +28,9 @@ Description: "Data group that is used as a template for deriving other data grou
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^binding.description = "Defined in the individual data set."
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * language 0..1 CodeableConcept "Language in which the resource is written. Language is expressed by the IETF language tag."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * ^binding.description = "BCP 47"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required

@@ -10,7 +10,7 @@ Description: "EHDSPatient means a structured set of data elements describing a s
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
   * ^binding.description = "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
   * value 1..1 
     * ^short = "The value that is unique."
     * insert Full(#SHALL)
@@ -32,7 +32,7 @@ Description: "EHDSPatient means a structured set of data elements describing a s
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "HL7 Administrative Gender"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * genderIdentity 0..1 CodeableConcept "The gender as declared by the patient."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -40,7 +40,7 @@ Description: "EHDSPatient means a structured set of data elements describing a s
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Sex Parameter for Clinical Use"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * address 0..* EHDSAddress "Address of the patient."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -49,4 +49,4 @@ Description: "EHDSPatient means a structured set of data elements describing a s
   * insert Basic(#SHOULD)
 //* countryOfAffiliation 1..* CodeableConcept "Country of affiliation"
 //  * ^binding.description =  "ISO 3166-1 alpha-2"
-//  * ^binding.strength = #preferred
+//  * ^binding.strength = #required

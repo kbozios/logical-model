@@ -18,7 +18,7 @@ Description: "The model is a structured document designed to provide an overview
     * ^short = "Categorisation of the event covered by the document (e.g. in case of a partial patient summary related to a specific context). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^definition = "Categorisation of the event covered by the document (e.g. in case of a partial patient summary related to a specific context). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^binding.description = "SNOMED CT (preferred), LOINC."
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * alerts 0..1 Base "Section: Alerts." "Substantial alerts or warnings that health professionals should be aware of."
   * insert Full(#SHALL)
@@ -45,7 +45,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Basic(#SHOULD)
     * ^comment = "Indicates whether the person is known to have no allergies or the data is considered incomplete."
     * ^binding.description = "HL Data Absent Reason"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   // * note 0..1 string "Free text notes by the health professional."
 
 * problems 1..1 Base "Section: Medical problems." """Conditions and symptoms affecting the health of the patient."""
@@ -58,7 +58,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL Data Absent Reason"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * currentProblem 0..* EHDSCondition "Active health conditions affecting the health of the patient."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -77,7 +77,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL Data Absent Reason"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * medicationUse 0..* EHDSMedicationUse "Use of medicinal product relevant for this patient summary. Typically, medicinal products whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -93,7 +93,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL Data Absent Reason"
-    * ^binding.strength = #preferred 
+    * ^binding.strength = #required 
   * deviceUse 0..* EHDSDeviceUse "Implanted and external medical devices and equipment."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -109,7 +109,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL Data Absent Reason"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * procedure 0..* EHDSProcedure "List of procedures" 
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -125,7 +125,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL Data Absent Reason"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * immunisation 0..* EHDSImmunisation "Immunisations." "Immunisations given to the patient and their status at the point of care."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -181,7 +181,7 @@ Description: "The model is a structured document designed to provide an overview
     * insert Basic(#SHOULD)
   // * note 0..1 string "Free text notes by the health professional."
 
-* patientStory 0..1 Base "Section: Patient story." """A concise narrative from the patient’s perspective about their present health state. This is a record of things that a person feels are important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care."""
+* patientStory 0..1 Base "Section: Patient story. A concise narrative from the patient’s perspective about their present health state. This is a record of things that a person feels are important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * generatedNarrative 0..1 Narrative "Narrative, potentially formatted, content of the whole section."

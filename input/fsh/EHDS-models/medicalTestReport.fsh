@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 * header //Obligations inherited from EHDSDocument
   * eventCategory 
     * ^binding.description = "LOINC (preferred), SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     * ^short = "Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^definition = "Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
   * intendedRecipient[x] 0..* EHDSPatient or EHDSRelatedPerson or EHDSHealthProfessional or EHDSOrganisation "Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). "
@@ -21,7 +21,7 @@ Characteristics: #can-be-target
     * insert Basic(#SHOULD)
     * orderId 1..* Identifier "An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders."
       * insert Full(#SHALL)
-      * insert Basic(#SHALL)
+      * insert Basic(#SHOULD)
     * orderDateAndTime 0..1 dateTime "Date and time of the order placement."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
@@ -32,7 +32,7 @@ Characteristics: #can-be-target
       * insert Full(#SHALL)
       * insert Basic(#SHALL)
       * ^binding.description = "SNOMED CT (preferred), ICD-10"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * clinicalQuestion 0..1 string "Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation."
       * insert Full(#SHALL)
       * insert Basic(#SHALL)
@@ -60,7 +60,7 @@ Characteristics: #can-be-target
 //  * serviceRequest 0..* EHDSServiceRequest "Specification of requested service or services."
   * resultData 1..1 Base "Medical test result data."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
     * comment 0..1 Narrative "Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)

@@ -15,7 +15,7 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
     * insert Basic(#SHOULD)
   * status
     * ^binding.description = "HL7 Request Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 * description 0..1 string "Textual description of the requested service."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -23,7 +23,7 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "LOINC, SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * quantity 0..1 Quantity "Number of requested services of the same type."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -37,7 +37,7 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)  
   * ^binding.description = "HL7 Request Priority"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * supportingInformation[x] 0..* EHDSObservation or EHDSCondition or EHDSProcedure or EHDSMedicationAdministration "Health conditions relevant for the results interpretation."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

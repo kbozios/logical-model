@@ -18,7 +18,7 @@ Description: "EHDSPregnancyHistory means a structured set of data elements descr
     * ^short = "Status of this observation."
     * ^definition = "Status of this observation."
     * ^binding.description = "HL7 Observation Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * endDate 0..1 dateTime "The end date of the pregnancy."
   * insert Full(#SHOULD)
@@ -27,7 +27,7 @@ Description: "EHDSPregnancyHistory means a structured set of data elements descr
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Free text notes by the health professional."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

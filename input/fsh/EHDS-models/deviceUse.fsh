@@ -16,7 +16,7 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
     * insert Basic(#SHOULD)
   * status 
     * ^binding.description = "HL7 Device Use Statement Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     * ^short = "Current status of the device usage (e.g. active, completed, etc)."
     * ^definition = "Current status of the device usage (e.g. active, completed, etc)."
 // TODO Note that R5 and R6 have a different binding
@@ -28,7 +28,7 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "SNOMED CT (preferred), EMDN"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * bodySite 0..1 EHDSBodyStructure "Anatomical location of the device. May include laterality."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -36,7 +36,7 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * note 0..1 string "Free text notes by the health professional."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

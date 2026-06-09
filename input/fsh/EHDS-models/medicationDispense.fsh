@@ -4,7 +4,6 @@ Parent: EHDSDataSet
 Description: "Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information."
 
 
-// search: subject, author, status, author datetime, identifier, relatedRequest
 * header //Obligation inherited from EHDSDataSet
   * ^short = "Dispensation header." 
   * ^definition = """Dispensation header."""
@@ -18,22 +17,21 @@ Description: "Logical model for medication dispensation (based on a request and 
   * ^definition = "Business identifier(s) for the dispense record."
 * header.author[x] 1..
   * insert Full(#SHALL)
-  * insert Basic(#SHOULD) // TODO SHOULD on mandatory element
+  * insert Basic(#SHOULD)
 * header.author[x] only EHDSHealthProfessional or EHDSOrganisation or EHDSDevice
   * ^short = "Author of the document."
   * ^definition = "The actor who issued the dispense record. Responsibility for the dispense should be traceable from this information."
 * header.patientInsertedData 0..0
 * header.date 1..1
   * insert Full(#SHALL)
-  * insert Basic(#SHOULD) // TODO SHOULD on mandatory element
+  * insert Basic(#SHOULD)
   * ^short = "Date and time of issuing the dispense record."
   * ^definition = "Date and time of issuing the dispense record."
 * header.status // Obligation inherited from EHDSDataSet
   * ^short = "The status of the dispense, e.g. completed, declined, entered-in-error."
   * ^definition = "The status of the dispense, e.g. completed, declined, entered-in-error."
   * ^binding.description = "HL7 MedicationDispense Status Codes"
-  * ^binding.strength = #preferred
-// * header.source 0..0
+  * ^binding.strength = #required
 * dispenseLocation 0..1 EHDSOrganisation "Location of dispense."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -50,7 +48,7 @@ Description: "Logical model for medication dispensation (based on a request and 
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "UCUM (preferred), EDQM Standard Terms" //TODO in UCUM the only unit for this is "1", effectively meaning "something"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 //* timeOfDispensation 0..1 dateTime "Date and time when the medicinal product was handed over. When not present, the time of dispensation is assumed to be the time of issuing dispense record."
 * substitutionOccurred 0..1 boolean "Whether substitution was made by the dispenser. Definition of substitution is specific to the jurisdiction."
 * dosageInstructions 0..1 EHDSDosage "Dosage and administration instructions for the dispensed medicinal product. These instructions may deviate from the instructions included in the prescription."

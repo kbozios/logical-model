@@ -20,7 +20,7 @@ Description: """A generic, flexible model for any kind of discharge report. Diff
     * ^definition = "Time of service that is being documented (typically the same as the time/period of the encounter)."
   * eventCategory
     * ^binding.description = "SNOMED CT (preferred), LOINC"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     * ^short = "Categorisation of the event covered by the document (e.g. discharge type). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^definition = "Categorisation of the event covered by the document (e.g. discharge type). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
   * intendedRecipient[x] 0..* EHDSRelatedPerson or EHDSHealthProfessional or EHDSOrganisation "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). Listing an intended recipient does not create an assignment or responsibility."
@@ -48,7 +48,7 @@ Description: """A generic, flexible model for any kind of discharge report. Diff
       * insert Full(#SHALL)
       * insert Basic(#SHALL)
     * note 0..1 string "Free text notes by the health professional."
-      * insert Full(#SHALL) // TODO Check obligations. Also note that structured data is required, so note might not be needed? Notes were removed from PS.
+      * insert Full(#SHALL) // TODO Check obligations. 
       * insert Basic(#SHOULD)
 
   * admissionEvaluation 0..1 Base "Section: Admission evaluation. Admission evaluation section should be reported only if it is relevant to ensure continuity of care."

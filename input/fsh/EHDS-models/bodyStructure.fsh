@@ -7,22 +7,22 @@ Description: "EHDSBodyStructure means a structured set of data elements describi
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * location 0..1 CodeableConcept "Body site"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * locationQualifier 0..* CodeableConcept "Additional qualifier of the body structure (e.g. upper, lower, distal, proximal)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * laterality 0..1 CodeableConcept "Body structure laterality (e.g. left, right)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 * description 0..1 string "Textual description of the body structure"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

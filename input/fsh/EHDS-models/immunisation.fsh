@@ -18,19 +18,19 @@ Description: "EHDSImmunisation means a structured set of data elements describin
     * ^short = "Status of the immunisation event (completed, not-done)."
     * ^definition = "Status of the immunisation event (completed, not-done)."
     * ^binding.description = "HL7 Immunization Status Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 
 * diseaseOrAgentTargeted 0..* CodeableConcept "Disease or agent that the vaccination provides protection against." "Disease or agent that the vaccination provides protection against (e.g. 76902006 Tetanus)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 
 * vaccine 1..1 CodeableConcept "Type of immunisation." "Type of immunisation, e.g. J07AM01 Tetanus toxoid; or 871803007 Hepatitis A and Hepatitis B virus antigens only vaccine product."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "ATC (preferred), SNOMED CT"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
 
 * administeredProduct 0..1 EHDSMedication "Administered medicinal product, including batch/lot details when necessary." "Administered medicinal product (e.g. TETAVAX suspension for injection), including batch/lot details when necessary."
   * insert Full(#SHOULD)

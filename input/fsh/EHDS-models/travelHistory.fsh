@@ -17,7 +17,7 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "ISO 3166"
-  * ^binding.strength = #preferred
+  * ^binding.strength = #required
   * ^requirements = "eHN PS Guideline"
 * period 0..1 Period "The period during which the patient visited the country."
   * insert Full(#SHOULD)

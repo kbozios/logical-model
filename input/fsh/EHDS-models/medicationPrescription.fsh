@@ -31,13 +31,13 @@ Description: "Logical model for medication prescription. A prescription contains
     * ^short = "Status of authorisation for dispensing the prescription items. This should not be the status of treatment. For a multiple-item prescription, this conveys the aggregate status of the entire prescription. In case of a single-item prescription, prescriptionItem.status shall be the same as EHDSMedicationPrescription.header.status."
     * ^definition = "Status of authorisation for dispensing the prescription items. For a multiple-item prescription, this conveys the aggregate status of the entire prescription. In case of a single-item prescription, prescriptionItem.status shall be the same as EHDSMedicationPrescription.header.status."
     * ^binding.description = "HL7 Medication Request Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * patientInsertedData 0..0
   * statusReason[x] 0..1 CodeableConcept or string "Reason for the current status of prescription, for example the reason why the prescription was cancelled or changed from a previous state."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Request Status Reason Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 // TODO this is example binding in FHIR
 
 * presentedForm 0..* EHDSAttachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."
@@ -53,12 +53,12 @@ Description: "Logical model for medication prescription. A prescription contains
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Request Status"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * statusReason[x] 0..1 CodeableConcept or string "Reason for the current status of prescription, for example the reason why the prescription was cancelled or why the prescription was changed from previous."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Request Status Reason Codes"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
 // TODO this is example binding in FHIR
 
   * medication 1..1 EHDSMedication "Prescribed medicinal product." "Prescribed medicinal product, which could be branded, generic, virtual, extemporal, etc."
@@ -68,12 +68,12 @@ Description: "Logical model for medication prescription. A prescription contains
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
   * intendedUseType 0..1 CodeableConcept "Intent of the prescription - prophylaxis, treatment, anaesthesia, etc."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
     * ^binding.description = "HL7 MedicationRequest Intent"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
     //TODO The binding does not match the description!
   * periodOfUse 0..1 Period "Period over which the medication is to be taken (in case of multiple dosage schemes, this shall be the overall period of all dosages)."
     * insert Full(#SHALL)
@@ -81,9 +81,8 @@ Description: "Logical model for medication prescription. A prescription contains
   * quantityPrescribed 1..1 Quantity "Overall quantity of prescribed medicinal product (e.g number of packages or number of tablets). In case of multiple items, this should indicate the overall quantity for the whole prescription. Where the total quantity cannot be determined unambiguously at issuance, the prescriber may express it on the basis of dosage instructions, validity period and number of repeats."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
-    * ^binding.description = "UCUM (preferred), EDQM Standard Terms"
-    * ^binding.strength = #preferred
-    //TODO For units, UCUM is for measurement units and EDQM is for presentation units (tablet, capsule, etc). One should not be preferred over other, since they are both needed.
+    * ^binding.description = "UCUM for units of measure, EDQM Standard Terms for units of presentation"
+    * ^binding.strength = #required
   * dosageInstructions 0..1 EHDSDosage "Dosage and administration instructions."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
@@ -97,12 +96,12 @@ Description: "Logical model for medication prescription. A prescription contains
       * insert Full(#SHALL)
       * insert Basic(#SHALL)
       * ^binding.description = "HL7 Substance Admin Substitution"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
     * reason[x] 0..1 CodeableConcept or string "Reason for the substitution requirement (e.g. Biological product, Patient allergic to an excipient in alternative products, etc)."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
       * ^binding.description = "SNOMED CT"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
 
   * numberOfRepeats 0..1 integer "Number of refills authorised - how many times the prescription item can be dispensed in addition to the original dispense. The default value is 0."
     * insert Full(#SHALL)
@@ -120,7 +119,7 @@ Description: "Logical model for medication prescription. A prescription contains
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
       * ^binding.description = "Not defined"
-      * ^binding.strength = #preferred
+      * ^binding.strength = #required
   * note 0..1 string "Additional information or comments, e.g. message to the dispenser."
     * ^binding.description = "SNOMED CT"
-    * ^binding.strength = #preferred
+    * ^binding.strength = #required
