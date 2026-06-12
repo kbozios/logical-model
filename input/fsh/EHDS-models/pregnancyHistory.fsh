@@ -1,21 +1,33 @@
 Logical: EHDSPregnancyHistory
 Parent: EHDSDataSet
 Title: "Pregnancy history model"
-Description: "Pregnancy history for one pregnancy"
+Description: "EHDSPregnancyHistory means a structured set of data elements describing a single past pregnancy."
 
-* header.status 
-  * ^short = "Status of this observation"
-  * ^definition = "Status of this observation"
-* header.author[x] 
-  * ^short = "Author of this observation"
-  * ^definition = "Author of this observation"
+* header // Obligations derived from EHDSDataSet
+  * identifier
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * author[x]
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+    * ^definition = "The author of this observation."
+  * date
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * status 
+    * ^short = "Status of this observation."
+    * ^definition = "Status of this observation."
+    * ^binding.description = "HL7 Observation Status"
+    * ^binding.strength = #required
+
 * endDate 0..1 dateTime "The end date of the pregnancy."
-  * ^requirements = "eHN PS Guideline, ISO IPS"
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD) 
 * outcome 0..1 CodeableConcept "The outcome of the pregnancy."
-  * ^requirements = "eHN PS Guideline, ISO IPS"
-  * ^binding.description = """SNOMED CT"""
-  * ^binding.strength = #preferred
-* numberOfFetuses 0..1 integer "Number of children/fetuses in this specific pregnancy"
-  * ^requirements = "eHN PS Guideline, ISO IPS"
-* note 0..1 string "Free text notes by the health professional"
-  * ^requirements = "eHN PS Guideline, ISO IPS"
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * ^binding.description = "SNOMED CT"
+  * ^binding.strength = #required
+* note 0..1 string "Free text notes by the health professional."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)

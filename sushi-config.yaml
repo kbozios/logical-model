@@ -193,160 +193,72 @@ menu:
 #
 groups:
 
-  EHDSPsLogicalModels:
-    name: EHDS Patient Summary Logical Models
-    description: Information Models for implementing EEHRxF Patient Summary under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements. The Patient Summary is currently being defined in a [separate branch](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/branches/patient-summary/artifacts.html#ehds-patient-summary-logical-models)
+  EHDSPriorityCategories:
+    name: EHDS Priority Categories
+    description: The models representing EHDS priority categories.
     resources:
       - StructureDefinition/EHDSPatientSummary
-
-  EHDSPrescriptionDispenseLogicalModels:
-    name: EHDS ePrescription and eDispense Logical Models
-    description: Information Models for implementing EEHRxF services for medication prescription and dispense services.
-    resources:
       - StructureDefinition/EHDSMedicationPrescription
       - StructureDefinition/EHDSMedicationDispense
-#      - StructureDefinition/EHDSDispenseDecline
-
-  EHDSLaboratoryLogicalModels:
-    name: EHDS Laboratory Domain Logical Models
-    description: Information Models for implementing EEHRxF services in the laboratory domain under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."
-    resources:
-      - StructureDefinition/EHDSLaboratoryReport
-#      - StructureDefinition/EHDSLaboratoryReportHeader
-#      - StructureDefinition/EHDSLaboratoryReportBody
-#      - StructureDefinition/EHDSLaboratoryOrder
-#      - StructureDefinition/EHDSLaboratoryOrderHeader
-#      - StructureDefinition/EHDSLaboratoryOrderBody
-      - StructureDefinition/EHDSLaboratoryObservation
-
-  EHDSImagingLogicalModels:
-    name: EHDS Imaging Domain Logical Models
-    description: Information Models for implementing EEHRxF services in the imaging domain under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."
-    resources:
+      - StructureDefinition/EHDSMedicalTestResultAndReport
       - StructureDefinition/EHDSImagingReport
-      #- StructureDefinition/EHDSImagingObservation
-      #- StructureDefinition/EHDSImagingReportHeader
-      #- StructureDefinition/EHDSImagingReportBody
       - StructureDefinition/EHDSImagingStudy
-
-  EHDSHdrLogicalModels:
-    name: EHDS Discharge Report Domain Logical Models
-    description: Information models for implementing EEHRxF Discharge report under EHDS. Format based on ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."
-    resources:
       - StructureDefinition/EHDSDischargeReport
 
   EHDSCommonLogicalModels:
     name: EHDS Common Logical Models
-    description: Information models shared across different priority categories. Additional requirements may be provided below in the Obligations section.
+    description: Information models shared across different priority categories.
     resources:
-      - StructureDefinition/EHDSMedication
-      - StructureDefinition/EHDSMedicationUse
-      - StructureDefinition/EHDSMedicationAdministration
-      - StructureDefinition/EHDSDosage
-      - StructureDefinition/EHDSObservation
-      - StructureDefinition/EHDSProcedure
-      - StructureDefinition/EHDSImmunisation
+      - StructureDefinition/EHDSAddress
+      - StructureDefinition/EHDSAdministeredDosage
+      - StructureDefinition/EHDSAdvanceDirective
+      - StructureDefinition/EHDSAlert
       - StructureDefinition/EHDSAllergyIntolerance
-      - StructureDefinition/EHDSPatient
-      - StructureDefinition/EHDSHealthProfessional
-      - StructureDefinition/EHDSOrganisation
+      - StructureDefinition/EHDSAttachment
+      - StructureDefinition/EHDSBodyStructure
+      - StructureDefinition/EHDSCarePlan
+      - StructureDefinition/EHDSCondition
+      - StructureDefinition/EHDSCurrentPregnancyStatus
       - StructureDefinition/EHDSDevice
       - StructureDefinition/EHDSDeviceUse
-      - StructureDefinition/EHDSRelatedPerson
-      - StructureDefinition/EHDSAlert
-      - StructureDefinition/EHDSAdvanceDirective
-      - StructureDefinition/EHDSCondition
-      - StructureDefinition/EHDSCurrentPregnancy
-      - StructureDefinition/EHDSAddress
-      - StructureDefinition/EHDSHumanName
-      - StructureDefinition/EHDSTelecom
-      - StructureDefinition/EHDSEndpoint
-      - StructureDefinition/EHDSBodyStructure
-      - StructureDefinition/EHDSAdministeredDosage
-      - StructureDefinition/EHDSAttachment
-      - StructureDefinition/EHDSCarePlan
+      - StructureDefinition/EHDSDosage
       - StructureDefinition/EHDSEncounter
+      - StructureDefinition/EHDSEndpoint
+      - StructureDefinition/EHDSHealthProfessional
+      - StructureDefinition/EHDSHumanName
+      - StructureDefinition/EHDSImmunisation
+      - StructureDefinition/EHDSLaboratoryObservation
       - StructureDefinition/EHDSLocation
+      - StructureDefinition/EHDSMedication
+      - StructureDefinition/EHDSMedicationAdministration
+      - StructureDefinition/EHDSMedicationUse
+      - StructureDefinition/EHDSObservation
+      - StructureDefinition/EHDSOrganisation
+      - StructureDefinition/EHDSPatient
+      - StructureDefinition/EHDSPregnancyHistory
+      - StructureDefinition/EHDSProcedure
+      - StructureDefinition/EHDSRelatedPerson
       - StructureDefinition/EHDSServiceRequest
-      - StructureDefinition/EHDSTravelHistory
       - StructureDefinition/EHDSSpecimen
+      - StructureDefinition/EHDSTelecom
+      - StructureDefinition/EHDSTravelHistory
+      
+
+  EHDSMetadataModels:
+    name: EHDS Metadata Models
+    description: Information models acting as templates for specialised models.
+    resources:
       - StructureDefinition/EHDSDataSet
       - StructureDefinition/EHDSDocument
-      - StructureDefinition/EHDSPregnancyHistory
 
-
-  EHDSObligations:
-    name: EHDS Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations are default obligations across use cases.
+  EHDSSupportLevels:
+    name: Support Levels
+    description: Support levels for obligations defined as ActorDefinitions. 
     resources:
-      - StructureDefinition/EHDSMedicationObligations
-      - StructureDefinition/EHDSMedicationUseObligations
-      - StructureDefinition/EHDSMedicationAdministrationObligations
-      - StructureDefinition/EHDSDosageObligations
-      - StructureDefinition/EHDSObservationObligations
-      - StructureDefinition/EHDSProcedureObligations
-      - StructureDefinition/EHDSImmunisationObligations
-      - StructureDefinition/EHDSAllergyIntoleranceObligations
-      - StructureDefinition/EHDSPatientObligations
-      - StructureDefinition/EHDSHealthProfessionalObligations
-      - StructureDefinition/EHDSOrganisationObligations
-      - StructureDefinition/EHDSDeviceObligations
-      - StructureDefinition/EHDSDeviceUseObligations
-      - StructureDefinition/EHDSRelatedPersonObligations
-      - StructureDefinition/EHDSAlertObligations
-      - StructureDefinition/EHDSAdvanceDirectiveObligations
-      - StructureDefinition/EHDSConditionObligations
-      - StructureDefinition/EHDSCurrentPregnancyObligations
+      - ActorDefinition/actor-full
+      - ActorDefinition/actor-basic
 
-  EHDSPatientSummaryObligations:
-    name: EHDS Patient Summary Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. For other related models, general obligations apply.
-    resources:
-      - StructureDefinition/EHDSPatientSummaryObligations
-
-  EHDSPrescribingDispensingObligations:
-    name: EHDS Prescribing and Dispensing Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to prescribing and dispensing systems (including repositories). For other related models, general obligations apply.
-    resources:
-      - StructureDefinition/EHDSMedicationPrescriptionObligations
-      - StructureDefinition/EHDSMedicationDispenseObligations
-
-
-  EHDSLaboratoryObligations:
-    name: EHDS Laboratory Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to laboratory domain use cases.
-    resources:
-      - StructureDefinition/EHDSBodyStructureLaboratoryObligations
-      - StructureDefinition/EHDSConditionLaboratoryObligations
-      - StructureDefinition/EHDSDeviceLaboratoryObligations
-      - StructureDefinition/EHDSHealthProfessionalLaboratoryObligations
-      - StructureDefinition/EHDSImmunisationLaboratoryObligations
-      - StructureDefinition/EHDSLaboratoryReportObligations
-      - StructureDefinition/EHDSMedicationLaboratoryObligations
-      - StructureDefinition/EHDSMedicationAdministrationLaboratoryObligations
-      - StructureDefinition/EHDSMedicationUseLaboratoryObligations
-      - StructureDefinition/EHDSOrganisationLaboratoryObligations
-      - StructureDefinition/EHDSPatientLaboratoryObligations
-      - StructureDefinition/EHDSProcedureLaboratoryObligations
-      - StructureDefinition/EHDSRelatedPersonLaboratoryObligations
-      - StructureDefinition/EHDSServiceRequestLaboratoryObligations
-      - StructureDefinition/EHDSSpecimenLaboratoryObligations
-      - StructureDefinition/EHDSLaboratoryObservationObligations
-
-
-  EHDSImagingObligations:
-    name: EHDS Imaging Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to discharge report domain use cases.
-    resources:
-      - StructureDefinition/EHDSImagingReportObligations
-      - StructureDefinition/EHDSImagingStudyObligations
-
-  EHDSDischargeReportObligations:
-    name: EHDS Discharge Report Domain Obligations
-    description: Information models derived from EHDS information models including obligations for data elements. These obligations apply to discharge report domain use cases.
-    resources:
-      - StructureDefinition/EHDSDischargeReportObligations
-      
+#      
 #
 #
 # The ImplementationGuide resource defines several other properties

@@ -6,10 +6,6 @@
 # 2021-11-26: reusable workflow
 
 name: GH_PAGES_BUILD
-
-permissions:
-  contents: read
-  pages: write 
   
 # Controls when the action will run. 
 on:
@@ -20,6 +16,11 @@ on:
   pull_request:
 
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  pull-requests: write
 
 jobs:
   # This workflow contains a single job called "build"
@@ -69,10 +70,11 @@ jobs:
 
       - name: Build tables
         run:  |
+          echo "$(basename ${{ github.ref }})"
           cd fhir-generate
           cargo build --release
-          ./target/release/fhir-generate table ../StructureDefinition*.json
-          pandoc *.md -o tables.docx
+          ./target/release/fhir-generate table ../branches/$(basename ${{ github.ref }})/StructureDefinition*.json
+          pandoc *.md -o tables.docx --reference-doc=custom-reference.docx 
           
       - name: Upload Word Document
         uses: actions/upload-artifact@v7

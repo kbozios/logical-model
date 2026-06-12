@@ -1,13 +1,38 @@
 Logical: EHDSRelatedPerson
 Title: "Related person model"
-Description: """Model for information about a guardian or other person related to the subject of care"""
+Description: "EHDSRelatedPerson means a structured set of data elements describing a person related to the patient, such as a guardian, next of kin, or other related person."
 
-
-* personalIdentifier 0..* Identifier "An identifier of the related person that is unique within a defined scope (e.g. national ID number). Multiple identifiers could be provided."
-* name 0..* EHDSHumanName "Name associated with the person."
+* identifier 0..* Identifier "A stable identifier of the patient that is unique within a defined scope, the use of temporary generated identifiers is not permitted. In addition to the mandatory attributes listed below, other attributes compliant with the HL7 FHIR Identifier structure may be included."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * type 1..1 
+    * ^short = "Description of the identifier."
+    * insert Full(#SHALL)
+    * insert Basic(#SHOULD)
+  * ^binding.description = "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
+  * ^binding.strength = #required
+  * value 1..1 
+    * ^short = "The value that is unique."
+    * insert Full(#SHALL)
+    * insert Basic(#SHOULD)
+  * system 1..1 
+    * ^short = "The namespace for the Identifier.value."
+    * insert Full(#SHALL)
+    * insert Basic(#SHOULD)
+* name 1..* EHDSHumanName "Name associated with the person."
+  * insert Full(#SHALL)
+  * insert Basic(#SHOULD)
 * subject 1..1 EHDSPatient "The patient in relation to whom the related person is defined."
+  * insert Full(#SHALL)
+  * insert Basic(#SHOULD)
 * relationship 0..1 CodeableConcept "Relationship between a patient and a contact person for that patient. This includes relatives, guardians, caring persons etc."
-  * ^binding.description = "HL7 RoleCode"
-  * ^binding.strength = #preferred
-* address 0..* EHDSAddress "Mailing and home or office address"
-* telecom 0..* EHDSTelecom "Telecommunication contact information (addresses) of the person."
+  * insert Full(#SHALL)
+  * insert Basic(#SHOULD)  
+  * ^binding.description = "HL7 Patient Relationship Type"
+  * ^binding.strength = #required
+* address 0..* EHDSAddress "Address of the person."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* telecom 0..* EHDSTelecom "Telecommunication contact information of the person."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)

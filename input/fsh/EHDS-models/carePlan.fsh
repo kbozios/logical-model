@@ -1,38 +1,56 @@
 Logical: EHDSCarePlan
 Parent: EHDSDataSet
 Title: "Care plan model"
-Description: "Simplified model for care plan. The model includes minimal information and is not designed to cover the full functionality of care plans. The model is applicable to different domains."
+Description: "EHDSCarePlan means a structured set of data elements describing the intended management of a patient's health conditions but excluding pharmacological treatment plans that are represented through medication model."
 
-* header.identifier 
-  * ^short = "Identifier for the care plan"
-  * ^definition = "Identifier for the care plan"
-* header.subject 
-  * ^short = "The patient whose intended care is described in the plan."
-  * ^definition = "The patient whose intended care is described in the plan."
-* header.author[x]
-  * ^short = "The responsible party (custodian) for the care plan."
-  * ^definition = "The responsible party (custodian) for the care plan."
-* header.status 
-  * ^short = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
-  * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
-  * ^binding.description = "HL7 Request status"
-  * ^binding.strength = #preferred
-* title 0..1 string "Human-friendly name for the care plan"
+* header //Obligations from EHDSDataSet
+  * identifier 
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+    * ^short = "Identifier for the care plan."
+    * ^definition = "Identifier for the care plan."
+  * subject 
+    * ^short = "The patient whose intended care is described in the plan."
+    * ^definition = "The patient whose intended care is described in the plan."
+  * author[x]
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * date
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+  * status //TODO not in the table, but inherited with obligations from EHDSDataSet anyway.
+    * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
+    * ^binding.description = "HL7 Request Status"
+    * ^binding.strength = #required
+* title 0..1 string "Human-friendly name for the care plan."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * description 0..1 string "A description of the scope and nature of the plan."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
 * period 0..1 Period "Indicates when the plan did (or is intended to) come into effect and end."
-* addresses[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
-  * ^binding.description = "ICD-10, SNOMED CT, Orphacode"
-  * ^binding.strength = #preferred
-* activity[x] 0..* CodeableConcept or Reference "The details of the proposed activity represented in a specific resource."
-* goal 0..* CodeableConcept "Describes the intended objective(s) of carrying out the care plan."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* conditionAddresses[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
+  * ^binding.strength = #required
+* activity 0..* Base "The details of the proposed activity represented in a specific resource."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * description[x] 0..1 CodeableConcept or string "A code or text that identifies the activity type."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+    * ^binding.description = "SNOMED CT"
+    * ^binding.strength = #required
+* goal 0..* Base "Describes the intended objective(s) of carrying out the care plan."
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+  * description[x] 0..1 CodeableConcept or string "A code or text describing the goal."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
+    * ^binding.description = "Not defined"
+    * ^binding.strength = #required
 
-/*
-* note 0..* string "Note" """General notes about the care plan not covered elsewhere."""
-* intent 1..1 CodeableConcept "Intent" """Indicates the level of authority/intentionality associated with the care plan and where the care plan fits into the workflow chain."""
-  * ^binding.description = "HL7 Care Plan Intent "
-  * ^binding.strength = #preferred
-* custodian 0..1 Reference(EHDSPatient or EHDSHealthProfessional or  EHDSHealthProfessional or  EHDSOrganisation or EHDSRelatedPerson) "Custodian" """Custodian is responsible for the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor."""
-* contributor 0..* Reference(EHDSPatient or EHDSHealthProfessional or EHDSHealthProfessional or  EHDSOrganisation or EHDSRelatedPerson) "Contributor" """Identifies the individual(s), organisation or device who provided the contents of the care plan."""
-* activity 0..* Reference(EHDSAppointment or EHDSMedicationPrescription or EHDSTask or EHDSServiceRequest) "Activity" """"""
-* goal 0..* EHDSGoal "Goal" """Describes the intended objective(s) of carrying out the care plan."""
-*/
+// TODO activity and goal modelled differently from the table, because the Backbone element (Base) cannot have [x]. Tried to keep the Base element (requested by the FHIR groups) and model the [x] below it.
