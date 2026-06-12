@@ -28,10 +28,10 @@ Description: "EHDSDevice means a structured set of data elements describing a me
   * insert Basic(#SHOULD)
   * value 1..1 string "The name of the device as known to e.g. the manufacturer and/or patient."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * type 1..1 CodeableConcept "The type of name, e.g. UDI Label name, user friendly name."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
 * modelNumber 0..1 string "The manufacturer's model number for the device."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

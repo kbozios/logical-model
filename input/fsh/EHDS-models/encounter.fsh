@@ -26,12 +26,12 @@ Description: "EHDSEncounter means a structured set of data elements describing a
   * ^binding.strength = #required
 * class 1..1 CodeableConcept "Class of the encounter (inpatient, ambulatory, virtual)."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Act Encounter Code"
   * ^binding.strength = #required
 * period 1..1 Period "The actual start and end time of the encounter."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * serviceProvider 0..1 EHDSOrganisation "The organisation (facility) responsible for this encounter."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -82,7 +82,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
     * insert Basic(#SHOULD)
   * organisation 1..1 EHDSOrganisation "Organisation or part of an organisation (e.g. department) where the patient was present during the encounter."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
 * subEncounter 0..* EHDSEncounter "Reference to encounters that are considered parts of this encounter."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

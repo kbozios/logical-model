@@ -3,7 +3,7 @@ Parent: EHDSDataSet
 Title: "Advance directive model"
 Description: "EHDSAdvanceDirective means a documented expression of a patient's wishes, preferences or instructions regarding their healthcare, including, but not limited to, decisions concerning life-sustaining treatment or arrangements to take effect after death."
 
-* header
+* header // Obligations derived from EHDSDataSet. TODO subject Basic-level obligation is SHOULD in this table but SHALL in DataSet.
   * author[x] ^definition = "Author of the advance directive."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)

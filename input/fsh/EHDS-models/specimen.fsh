@@ -4,7 +4,7 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
 
 * identifier 1..* Identifier "An identifier of the specimen which is unique within in a defined scope. Example: identifier assigned by ordering system, identifier assigned by laboratory etc. Multiple identifiers can be used."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * status 0..1 CodeableConcept "Availability of the specimen."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
@@ -35,7 +35,7 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
     * insert Basic(#SHOULD)
   * collected[x] 1..1 Period or dateTime "The period or date and time of specimen collection."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * quantity 0..1 Quantity "The quantity of specimen collected."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -62,7 +62,7 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
     * insert Basic(#SHOULD)
   * containerDevice 1..1 EHDSDevice "The device resource for the the container holding the specimen."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
 * condition 0..* CodeableConcept "State of the specimen. State of the speeimen should be alligned with dataAbsentReason element of the Observatiom model."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)

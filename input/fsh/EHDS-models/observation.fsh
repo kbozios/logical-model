@@ -24,10 +24,10 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Basic(#SHOULD)
 * observationDate[x] 1..1 dateTime or Period "Clinically relevant time or time period for the observation."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * type 1..1 CodeableConcept "Observation type that indicates what was observed."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), LOINC, NPU"
   * ^binding.strength = #required
 * originalName 0..1 string "Original (conventional) name of the observation as used in the local laboratory or clinical system."
@@ -52,7 +52,7 @@ Description: "EHDSObservation means a structured set of data elements describing
   * insert Basic(#SHOULD)
 * result 1..1 Base "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * value[x] 0..1 string or Quantity or Range or Ratio or CodeableConcept "Observation result value according to the type of observation."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -118,9 +118,9 @@ Description: "EHDSObservation means a structured set of data elements describing
 * component 0..* Base "Component in case the observation consists of multiple sub-observations (e.g. blood pressure)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)   
-  * code 1..1 CodeableConcept "Type of the component observation." //TODO it is .type for Observation and .code for Observation.component. Is it intentional?
+  * code 1..1 CodeableConcept "Type of the component observation." //TODO it is .type for Observation and .code for Observation.component. Missing obligations in the table.
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)   
+    * insert Basic(#SHOULD)   
     * ^binding.description = "SNOMED CT (preferred), LOINC, NPU"
     * ^binding.strength = #required
   * originalName 0..1 string "Original (user-friendly) name of the observation as used in the local laboratory or clinical system."
@@ -128,7 +128,7 @@ Description: "EHDSObservation means a structured set of data elements describing
     * insert Basic(#SHOULD)   
   * result 1..1 Base "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)   
+    * insert Basic(#SHOULD)   
     * value[x] 0..1 string or Quantity or Range or Ratio or CodeableConcept "Observation result value according to the type of observation."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)   

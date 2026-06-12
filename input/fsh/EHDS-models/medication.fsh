@@ -3,7 +3,7 @@ Title: "Medication model"
 Description: "EHDSMedication means a structured set of data elements describing a medicinal product."
 
 * identifyingCode[x] 0..* CodeableConcept or Identifier "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions."
-  * insert Full(#SHOULD)
+  * insert Full(#SHALL)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT, EMA SPOR PMS, or a national coding system or register."
   * ^binding.strength = #required
@@ -48,7 +48,7 @@ Description: "EHDSMedication means a structured set of data elements describing 
       * insert Basic(#SHOULD)
     * substance 1..1 CodeableConcept "Substance."
       * insert Full(#SHALL)
-      * insert Basic(#SHALL)
+      * insert Basic(#SHOULD)
       * ^binding.description = "EMA SPOR SMS"
       * ^binding.strength = #required
     * strengthInfo 0..1 Base "Strength of the product - amount of substance per unit."
@@ -56,7 +56,7 @@ Description: "EHDSMedication means a structured set of data elements describing 
       * insert Basic(#SHOULD)
       * strength[x] 1..1 Ratio or string "Concentration or presentation strength, e.g '100 mg/1 ml' or '500 mg per 1 tablet'."
         * insert Full(#SHALL)
-        * insert Basic(#SHALL)
+        * insert Basic(#SHOULD)
       * basisOfStrengthSubstance 0..1 CodeableConcept "Substance that the strength refers to, especially when different from .item.strength.substance."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
@@ -87,10 +87,10 @@ Description: "EHDSMedication means a structured set of data elements describing 
   * insert Basic(#SHOULD)
   * deviceQuantity 1..1 Quantity "Number of devices."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * device[x] 1..1 CodeableConcept or EHDSDevice "Device coded."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
     * ^binding.description = "EDQM Standard Terms"
     * ^binding.strength = #required
 * characteristic 0..* Base "Additional features of the product (e.g. reimbursable, sugar-free, easy-open cap, score-lined). It is expected that implementers will define a valueset supporting their use cases."

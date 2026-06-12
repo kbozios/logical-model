@@ -22,7 +22,7 @@ Description: "EHDSProcedure means a structured set of data elements describing a
 
 * code 1..1 CodeableConcept "Concept code and display name identifying the type of procedure."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT"
   * ^binding.strength = #required
 * procedureDate[x] 0..1 dateTime or Period "Date and time of the procedure or interval of its performance."

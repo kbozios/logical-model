@@ -23,7 +23,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
 
 * code 1..1 CodeableConcept "Code identifying the condition, problem or diagnosis."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, ICD-O, Orphacode"
   * ^binding.strength = #required
 * onsetDate 0..1 dateTime "Estimated or actual date the problem/condition began."

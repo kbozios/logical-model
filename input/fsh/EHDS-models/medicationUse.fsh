@@ -14,7 +14,7 @@ Description: "EHDSMedicationUse means a structured set of data elements describi
   * date
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status
+  * status // TODO note that status is SHALL-SHALL for this table.
     * ^short = "Status of the medication use statement (e.g. recorded)."
     * ^definition = "Status of the medication use statement (e.g. recorded)."
     * ^binding.description = "HL7 Medication Status Codes"
@@ -25,14 +25,14 @@ Description: "EHDSMedicationUse means a structured set of data elements describi
 //* changeType 0..* CodeableConcept "Medication use's change type in a medication summary (e.g. 'added', 'removed', 'altered'). Relevant at the time of discharge or other alteration of the active medications' list."
 * medication 1..1 EHDSMedication "Describes the medicinal product."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * reason[x] 0..* CodeableConcept or string "Reason for the use of the medication (typically diagnosis, or a procedure)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
 * dosageInstructions 1..1 EHDSDosage "Details of how medication is/was taken or should be taken."
-  * insert Full(#SHOULD)
+  * insert Full(#SHALL)
   * insert Basic(#SHOULD)
 * dateAsserted 0..1 dateTime "Date and optionally time when the medication use statemenet was asserted."  //TODO This is the same as header.date - the descriptions don't allow differentiation.
   * insert Full(#SHOULD)

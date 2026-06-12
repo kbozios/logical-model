@@ -47,9 +47,9 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
 * goal 0..* Base "Describes the intended objective(s) of carrying out the care plan."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * description[x] 1..1 CodeableConcept or string "A code or text describing the goal."
-    * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+  * description[x] 0..1 CodeableConcept or string "A code or text describing the goal."
+    * insert Full(#SHOULD)
+    * insert Basic(#SHOULD)
     * ^binding.description = "Not defined"
     * ^binding.strength = #required
 

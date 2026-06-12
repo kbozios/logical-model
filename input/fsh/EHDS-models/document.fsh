@@ -9,7 +9,7 @@ Description: "Structured set of data elements common for all health documents."
     * insert Basic(#SHALL)
     * ^short = "Unique identifier of the document."
     * ^definition = "Unique identifier of the document."
-  * status // Obligation inherited from EHDSDataSet
+  * status // TODO if EHDSDataSet status goes to SHOULD, this here should be changed to SHALL
     * ^short = "Status of the document."
     * ^definition = "Status of the document."
     * ^binding.description = "HL7 Composition Status"

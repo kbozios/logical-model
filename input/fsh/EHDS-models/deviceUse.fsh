@@ -26,7 +26,7 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
   * insert Basic(#SHOULD)
 * device[x] 1..1 CodeableConcept or EHDSDevice "The details of the device used."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED CT (preferred), EMDN"
   * ^binding.strength = #required
 * bodySite 0..1 EHDSBodyStructure "Anatomical location of the device. May include laterality."

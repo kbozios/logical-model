@@ -28,7 +28,7 @@ Description: "EHDSImmunisation means a structured set of data elements describin
 
 * vaccine 1..1 CodeableConcept "Type of immunisation." "Type of immunisation, e.g. J07AM01 Tetanus toxoid; or 871803007 Hepatitis A and Hepatitis B virus antigens only vaccine product."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "ATC (preferred), SNOMED CT"
   * ^binding.strength = #required
 
@@ -37,7 +37,7 @@ Description: "EHDSImmunisation means a structured set of data elements describin
   * insert Basic(#SHOULD)
 * administrationTime 1..1 dateTime "The date and optionally the exact time when the vaccination was administered."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * administeringCentre 0..1 EHDSOrganisation "Administering centre or a health authority responsible for the vaccination event"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

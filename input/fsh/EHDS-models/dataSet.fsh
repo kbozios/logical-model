@@ -26,7 +26,7 @@ Description: "Data group that is used as a template for deriving other data grou
 // TODO Obligation removed to not populate double-obligations downstreams
   * status 1..1 CodeableConcept "Status of the resource."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHALL) //TODO recommended to make it SHALL (SHOULD in tables) since the validity of the information (narrative or structured) depends on it.
     * ^binding.description = "Defined in the individual data set."
     * ^binding.strength = #required
   * language 0..1 CodeableConcept "Language in which the resource is written. Language is expressed by the IETF language tag."

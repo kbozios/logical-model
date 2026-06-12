@@ -8,23 +8,23 @@ Description: "EHDSRelatedPerson means a structured set of data elements describi
   * type 1..1 
     * ^short = "Description of the identifier."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * ^binding.description = "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
   * ^binding.strength = #required
   * value 1..1 
     * ^short = "The value that is unique."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
   * system 1..1 
     * ^short = "The namespace for the Identifier.value."
     * insert Full(#SHALL)
-    * insert Basic(#SHALL)
+    * insert Basic(#SHOULD)
 * name 1..* EHDSHumanName "Name associated with the person."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * subject 1..1 EHDSPatient "The patient in relation to whom the related person is defined."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
 * relationship 0..1 CodeableConcept "Relationship between a patient and a contact person for that patient. This includes relatives, guardians, caring persons etc."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)  

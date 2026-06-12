@@ -13,9 +13,10 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
   * date
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
+   // status has SHOULD/SHOULD in the table and no binding. 
 * country 1..1 CodeableConcept "Country visited."
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  * insert Basic(#SHOULD)
   * ^binding.description = "ISO 3166"
   * ^binding.strength = #required
   * ^requirements = "eHN PS Guideline"
