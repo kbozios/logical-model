@@ -65,5 +65,5 @@ In order to download the model in a spreadsheet format, navigate to the very bot
 
 For bulk download, navigate to the [Download](downloads.html) page. 
 
-For FSH version of artifacts, PLANTUML diagrams, or the source code for any other parts of this implementation guide, navigate to the source code in [GitHub](https://github.com/Xt-EHR/xt-ehr-common).
+For FSH version of artifacts, PLANTUML diagrams, or the source code for any other parts of this implementation guide, navigate to the source code in GitHub.
 

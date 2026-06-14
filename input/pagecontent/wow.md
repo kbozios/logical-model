@@ -1,3 +1,5 @@
+**THIS PAGE IS NOT UPDATED**
+
 ### Change management
 
 All changes in the implementation guide for logical models shall have a traceable history, including the origin of the change proposal, the group’s decision to reject or approve the proposal, and authoring details.

@@ -36,3 +36,10 @@ Other sources for refining the models have been:
 - SNOMED CT machine-readable concept model
 
 Stakeholder feedback collected during the Xt-EHR project provided important insight into real-world expectations and readiness to adopt the models. Many proposed models were significantly simplified based on this feedback in order to keep the focus on a core dataset that would be feasible to implement within the EHDS timeframe.
+
+### EHDS Comitology Process
+
+The logical models from Xt-EHR project were the starting point of the comitology process for EHDS Article 15 implementing act (The Format).  
+During this process, the models have been adjusted according to the results of member states negotiations.
+
+The implementing act is due March 2027.
