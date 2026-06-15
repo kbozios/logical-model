@@ -1,5 +1,5 @@
 Logical: EHDSDevice
-Title: "Device or implant model"
+Title: "Device or implant model."
 Description: "EHDSDevice means a structured set of data elements describing a medical device or implant."
 
 * instanceIdentifier 0..* Identifier "Identifier of the device instance."
@@ -41,7 +41,7 @@ Description: "EHDSDevice means a structured set of data elements describing a me
 * type 0..* CodeableConcept "Device type."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), EMDN"
+  * ^binding.description = "SNOMED GPS (preferred), EMDN"
   * ^binding.strength = #required
 * note 0..1 string "Device note and/or comment."
   * insert Full(#SHOULD)
