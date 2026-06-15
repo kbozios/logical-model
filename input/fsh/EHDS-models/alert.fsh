@@ -23,7 +23,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
 * code 0..1 CodeableConcept "A coded representation of the alert."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT"
+  * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
 * description 0..1 Narrative "Narrative representation of the alert."
   * insert Full(#SHALL)
