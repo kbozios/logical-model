@@ -1,6 +1,6 @@
 Logical: EHDSCondition
 Parent: EHDSDataSet
-Title: "Condition model"
+Title: "Condition model."
 Description: "EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis."
 
 
@@ -24,7 +24,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
 * code 1..1 CodeableConcept "Code identifying the condition, problem or diagnosis."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), ICD-10, ICD-O, Orphacode"
+  * ^binding.description = "SNOMED GPS (preferred), ICD-10, ICD-O, Orphacode"
   * ^binding.strength = #required
 * onsetDate 0..1 dateTime "Estimated or actual date the problem/condition began."
   * insert Full(#SHOULD)
@@ -35,7 +35,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
 * category 0..* CodeableConcept "Category of the problem (e.g. POA - present on admission, HAC - hospital acquired condition, and other categorisations)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT"
+  * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
 * resolutionCircumstances 0..1 string "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.)."
   * insert Full(#SHOULD)
@@ -43,12 +43,12 @@ Description: "EHDSCondition means a structured set of data elements describing a
 * severity 0..1 CodeableConcept "A subjective assessment of the severity of the condition."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT"
+  * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
 * bodySite 0..* EHDSBodyStructure "The anatomical location including laterality where this condition manifests itself."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* stage 0..* CodeableConcept "Stage/grade usually assessed formally using a specific staging/grading system. Multiple assessment systems could be used."
+* stage 0..* CodeableConcept "Stage/grade usually assessed formally using a specific staging/grading system (e.g., TNM, ICD-O, BI-RADS etc). Multiple assessment systems could be used."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
   * ^binding.description = "Not defined"
