@@ -1,6 +1,6 @@
 Logical: EHDSAttachment
 //Id: EHDSattachment
-Title: "Attachment model"
+Title: "Attachment model."
 Description: "EHDSAttachment means a structured set of data elements describing additional content, in a format identifiable by a MIME type, including images, clinical reports, or other documents."
 
 * contentType 0..1 CodeableConcept "Mime type of the content, with charset etc."

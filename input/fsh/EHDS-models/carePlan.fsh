@@ -1,6 +1,6 @@
 Logical: EHDSCarePlan
 Parent: EHDSDataSet
-Title: "Care plan model"
+Title: "Care plan model."
 Description: "EHDSCarePlan means a structured set of data elements describing the intended management of a patient's health conditions but excluding pharmacological treatment plans that are represented through medication model."
 
 * header //Obligations from EHDSDataSet
@@ -18,10 +18,6 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   * date
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status //TODO not in the table, but inherited with obligations from EHDSDataSet anyway.
-    * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
-    * ^binding.description = "HL7 Request Status"
-    * ^binding.strength = #required
 * title 0..1 string "Human-friendly name for the care plan."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -34,7 +30,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
 * conditionAddresses[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
+  * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
 * activity 0..* Base "The details of the proposed activity represented in a specific resource."
   * insert Full(#SHOULD)
@@ -42,7 +38,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   * description[x] 0..1 CodeableConcept or string "A code or text that identifies the activity type."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^binding.description = "SNOMED CT"
+    * ^binding.description = "SNOMED GPS"
     * ^binding.strength = #required
 * goal 0..* Base "Describes the intended objective(s) of carrying out the care plan."
   * insert Full(#SHOULD)
