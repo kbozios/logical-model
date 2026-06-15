@@ -1,6 +1,6 @@
 Logical: EHDSAllergyIntolerance
 Parent: EHDSDataSet
-Title: "Allergy intolerance model"
+Title: "Allergy intolerance model."
 Description: """EHDSAllergyIntolerance means a structured set of data elements describing a clinically identified predisposition of a patient to an adverse reaction upon exposure to a specific agent or allergen."""
 
 
@@ -8,6 +8,9 @@ Description: """EHDSAllergyIntolerance means a structured set of data elements d
   * identifier
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
+    * ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    * ^definition = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+  * date
   * author[x]
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -23,7 +26,7 @@ Description: """EHDSAllergyIntolerance means a structured set of data elements d
 * agentOrAllergen 1..1 CodeableConcept "Code that identifies the allergy or intolerance." 
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-  * ^binding.description = "ATC, EMA SPOR SMS, SNOMED CT"
+  * ^binding.description = "EMA SPOR SMS (preferred for medication), SNOMED GPS (preferred for other cases)"
   * ^binding.strength = #required
   * ^comment = "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., Latex), an allergy or intolerance condition (e.g., Latex allergy), or a negated/excluded code for a specific substance or class (e.g., No latex allergy). It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'."
 
@@ -62,7 +65,7 @@ Description: """EHDSAllergyIntolerance means a structured set of data elements d
   * manifestation 0..* CodeableConcept "Description of the clinical manifestation of the allergic reaction."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
-    * ^binding.description = "SNOMED CT"
+    * ^binding.description = "SNOMED GPS"
     * ^binding.strength = #required
 
   * severity 0..1 CodeableConcept "Severity of the clinical manifestation of the allergic reaction."

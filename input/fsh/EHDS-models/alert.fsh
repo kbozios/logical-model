@@ -7,6 +7,9 @@ Description: """EHDSAlert means a structured set of data elements describing a c
   * identifier
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
+    * ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    * ^definition = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+  * date
   * author[x]
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
