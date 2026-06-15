@@ -1,3 +1,5 @@
+**THIS PAGE HAS NOT BEEN UPDATED**
+
 Xt-EHR Information models are published as FHIR Logical Models. While they may be represented similarly to the technical FHIR profiles, they remain representations of abstract data structures - simply captured as a technical artifact (a FHIR StructureDefinition) instead of a spreadsheet or document. These models are different and separate artifacts from the profiles. For example, a model for prescription is defined independently of any resource or any FHIR release, and it may me mapped to its FHIR implementation as a MedicationRequest in FHIR R4 or FHIR R5 as well as to a CDA document or a custom national specification.
 
 FHIR Implementation Guide for publishing information models is based on current FHIR R5 release, but this does not imply that the actual implementations would have to use the same or any other FHIR version.

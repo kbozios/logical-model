@@ -1,23 +1,23 @@
 EHDS models use FHIR data types for defining data types, but with less constraints and without additional elements or extensions that may be provided in the FHIR specification. The following data types are used in logical models.
 
-### Allowed data types
+### Definitions of used data types
 
-|**Type**|**Description**|**Notes**|  
-|Base|Base data type in these models is used as a grouper element for its children elements. It does not have a value.||  
-|string|A sequence of UNICODE characters.|Constraints introduced to string in FHIR standard are not implied for other formats. A string in a logical model may be implemented as a formatted text, such as markdown or xhtml, if supported by the implementation standard.|  
-|dateTime|Date and time with the precision needed for the use case (from year to millisecond)|FHIR format is not implied|  
-|date|Date without the exact time.|FHIR format is not implied.|  
-|time|Time during a day, without the date being present.|FHIR format is not implied.|  
-|Period|Two dateTimes marking a period from the first dateTime to the second dateTime. Precision is decided by the use case.||  
-|CodeableConcept|Coded value. Code, display name, and code system are expected, but sometimes they may be implicit.|In FHIR, CodeableConcept also includes ‘text’ element. In logical models, ‘text’ instead of code should only be considered as a fallback mechanism, not a design option. When text and code are both expected/acceptable, string option should be explicitly listed in the model.|  
-|integer|A whole number, positive or negative according to the use case.||  
-|decimal|A number that consists of a whole and a fractional part. Precision is dependent on the use case.|Note that every format has its constraints on decimals to be aware of.|  
-|Quantity|Integer or decimal accompanied with a unit (preferrably a coded concept).|FHIR has a number of profiles and extensions on Quantity, these are not implied in the logical models unless explicitly stated in element description.|  
-|Range|Two quantities with the first one indicating the minimum and the second one indicating the maximum (e.g 2mg - 4mg)||  
-|Ratio|Ratio of two quantities, typically used for values like “1 tablet per 4 hours” and “800ml per 1 day.||   
-|boolean|A binary value of true/false.|Typically needs an agreed default value when the element is not present.|  
-|Identifier|A logical reference to a real-life entity registered in a system. Identifier needs to be coupled with its source system, but in some cases the source may be implicit.|FHIR format and additional elements of Identifier data type are not required.|  
-|EHDSModel|Any model specifying the expected data|When a data type is marked as EHDSModelName, a contained or referenced block of data is expected from the named model. |  
+| **Data type name** | **Data type description** |
+|---|---|
+| Base | A foundational data type that provides shared structure and characteristics for other data types. Carries no value itself. |
+| base64Binary | A sequence of bytes encoded in base64 format. |
+| boolean | A binary value, either true or false. |
+| CodeableConcept | A coded data type used to designate data fields. |
+| dateTime | A date, time, or partial date (e.g. YYYY, YYYY-MM, YYYY-MM-DD, or YYYY-MM-DDThh:mm:ss+zz:zz). When hours and minutes are included, a time zone offset is required. |
+| decimal | A numerical value consisting of a whole and a fractional part. Precision is determined by the use case. |
+| EHDS[Name of the data group] | A reference to the EHDS common data group. |
+| Identifier | A value that uniquely and unambiguously identifies an entity, coupled with its source system where applicable. |
+| integer | A whole number, positive or negative, as determined by the use case. |
+| integer64 | A signed 64-bit whole number ranging from -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807. Used where very large counts or time values are required. |
+| Period | A time interval defined by two dateTime values representing the start and end points. Precision is determined by the use case. |
+| Quantity | A numerical value, integer or decimal, accompanied by a unit of measure, preferably expressed as a coded concept. |
+| Range | An interval defined by a minimum and maximum Quantity (e.g. 2 mg–4 mg). |
+| Ratio | A relationship between two Quantity values expressed as a numerator and a denominator (e.g. 1 tablet per 4 hours). | 
 {:.table-bordered .table-striped .thead-light}  
 
 ### Reference or contained data
