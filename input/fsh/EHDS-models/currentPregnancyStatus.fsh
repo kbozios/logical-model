@@ -1,12 +1,15 @@
 Logical: EHDSCurrentPregnancyStatus
 Parent: EHDSDataSet
-Title: "Current pregnancy status model"
+Title: "Current pregnancy status model."
 Description: "EHDSCurrentPregnancyStatus means a structured set of data elements describing a patient's pregnancy status at a given point in time."
 
 * header // Obligations derived from EHDSDataSet
   * identifier
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
+    * ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    * ^definition = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+  * date
   * author[x]
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -23,7 +26,7 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
 * currentPregnancyStatus 1..1 CodeableConcept "Pregnancy status of the patient, e.g. pregnant, not pregnant, possible pregnancy."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT"
+  * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
 * dateOfStatus 0..1 dateTime "Effective date of the current pregnancy status."
   * insert Full(#SHOULD)
