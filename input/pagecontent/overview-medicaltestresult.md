@@ -6,17 +6,17 @@ Medical test results are communicated using [EHDSObservation model](StructureDef
 
 In specific laboratory context [EHDSLaboratoryObservation model](StructureDefinition-EHDSLaboratoryObservation.html) is used - it is a derivation from EHDSObservation and adds specific elements.
 
-##### Laboratory Result Report
+##### Medical Test Result Report
 
-Laboratory result report could be divided into several parts: document header, body and optionally it could also have various attachments.
+Medical test result report could be divided into several parts: document header, body and optionally it could also have various attachments.
 
 <figure>
   {% include labReport_CIM.svg %}
 </figure>
 
 
-### Detail EHDS information models for Laboratory report
-- [Laboratory Report Document](StructureDefinition-EHDSLaboratoryReport.html)
+### Detail EHDS information models for medical test (incl laboratory) report
+- [Medical Test Result Report](StructureDefinition-EHDSMedicalTestResultAndReport.html)
 - [Laboratory Observation](StructureDefinition-EHDSLaboratoryObservation.html)
 
 
