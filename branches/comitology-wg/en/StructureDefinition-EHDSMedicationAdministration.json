@@ -1,0 +1,970 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSMedicationAdministration",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSMedicationAdministration</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration\" title=\"EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure.\">EHDSMedicationAdministration</a><a name=\"EHDSMedicationAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EHDSDataSet.html\">EHDSDataSet</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medication administration model<br/><br/>Elements defined in Ancestors:<a href=\"StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information.\">header</a><br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.header\">header</a><a name=\"EHDSMedicationAdministration.header\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.header.identifier\">identifier</a><a name=\"EHDSMedicationAdministration.header.identifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Business identifier assigned to the resource or document (not a patient ID and not the technical resource ID).</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.header.author[x]\" title=\"Responsible person for recording the administration (this may be the performer).\">author[x]</a><a name=\"EHDSMedicationAdministration.header.author_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"StructureDefinition-EHDSHealthProfessional.html\">EHDSHealthProfessional</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"StructureDefinition-EHDSOrganisation.html\">EHDSOrganisation</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"StructureDefinition-EHDSDevice.html\">EHDSDevice</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"StructureDefinition-EHDSPatient.html\">EHDSPatient</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"StructureDefinition-EHDSRelatedPerson.html\">EHDSRelatedPerson</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Author of the resource.</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.header.date\">date</a><a name=\"EHDSMedicationAdministration.header.date\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Date and optionally time of authoring/issuing.</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.header.status\" title=\"Status of the administration (e.g. completed, on-hold).\">status</a><a name=\"EHDSMedicationAdministration.header.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Status of the resource.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding Description: </span><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span><span title=\"null\" class=\"binding\"> </span><span style=\"font-weight:bold; color: #c97a18\" title=\"This binding doesn't define a testable ValueSet\" class=\"binding\">⚠</span><span title=\"null\" class=\"binding\">: </span><span title=\"null\" class=\"binding\">HL7 MedicationAdministration Status Codes</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.medication\" title=\"Administered medication.\">medication</a><a name=\"EHDSMedicationAdministration.medication\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EHDSMedication.html\">EHDSMedication</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Administered medication.<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.occurrence[x]\" title=\"Specific date/time or interval of time during which the administration took place (or did not take place).\">occurrence[x]</a><a name=\"EHDSMedicationAdministration.occurrence_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Specific date/time or interval of time during which the administration took place (or did not take place).<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span title=\"dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.\">occurrenceDateTime</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"Period Type: A time period defined by a start and end date and optionally time.\">occurrencePeriod</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.reason[x]\" title=\"Condition or observation that supports why the medication was administered.\">reason[x]</a><a name=\"EHDSMedicationAdministration.reason_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Condition or observation that supports why the medication was administered.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding Description: </span><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span><span title=\"null\" class=\"binding\"> </span><span style=\"font-weight:bold; color: #c97a18\" title=\"This binding doesn't define a testable ValueSet\" class=\"binding\">⚠</span><span title=\"null\" class=\"binding\">: </span><span title=\"null\" class=\"binding\">SNOMED CT (preferred), ICD-10, Orphacode</span><br/><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">reasonCodeableConcept</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis.\">reasonEHDSCondition</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EHDSCondition.html\">EHDSCondition</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.\">reasonEHDSObservation</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EHDSObservation.html\">EHDSObservation</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.dosage\" title=\"Details of how medication was taken/administered.\">dosage</a><a name=\"EHDSMedicationAdministration.dosage\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EHDSAdministeredDosage.html\">EHDSAdministeredDosage</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Details of how medication was taken/administered.<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSMedicationAdministration-definitions.html#EHDSMedicationAdministration.note\" title=\"Textual information about the administration.\">note</a><a name=\"EHDSMedicationAdministration.note\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Textual information about the administration.<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-full.html\">Full</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process\" title=\"Obligation Codes: process\">process</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-actor-basic.html\">Basic</a></td></tr></table></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration",
+  "version" : "0.1.0",
+  "name" : "EHDSMedicationAdministration",
+  "title" : "Medication administration model",
+  "status" : "draft",
+  "date" : "2026-06-14T20:46:18+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration",
+  "baseDefinition" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0"
+    }],
+    "element" : [{
+      "id" : "EHDSMedicationAdministration",
+      "path" : "EHDSMedicationAdministration",
+      "short" : "Medication administration model",
+      "definition" : "EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header",
+      "short" : "Basic metadata for this information.",
+      "definition" : "Basic metadata for this information.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.subject",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.subject",
+      "short" : "Patient/subject information.",
+      "definition" : "Patient/subject information.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.subject",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.identifier",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.identifier",
+      "short" : "Business identifier assigned to the resource or document (not a patient ID and not the technical resource ID).",
+      "definition" : "Business identifier assigned to the resource or document (not a patient ID and not the technical resource ID).",
+      "comment" : "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.author[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.author[x]",
+      "short" : "Author of the resource.",
+      "definition" : "Responsible person for recording the administration (this may be the performer).",
+      "comment" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.author[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.patientInsertedData",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.patientInsertedData",
+      "short" : "Indicator that states, when included with value ‘true’, that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element.",
+      "definition" : "Indicator that states, when included with value ‘true’, that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.patientInsertedData",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.date",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.date",
+      "short" : "Date and optionally time of authoring/issuing.",
+      "definition" : "Date and optionally time of authoring/issuing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.date",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.status",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.status",
+      "short" : "Status of the resource.",
+      "definition" : "Status of the administration (e.g. completed, on-hold).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 MedicationAdministration Status Codes"
+      }
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.language",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.language",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "BCP 47"
+      }
+    },
+    {
+      "id" : "EHDSMedicationAdministration.medication",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.medication",
+      "short" : "Administered medication.",
+      "definition" : "Administered medication.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSMedicationAdministration.medication",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedication"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.occurrence[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.occurrence[x]",
+      "short" : "Specific date/time or interval of time during which the administration took place (or did not take place).",
+      "definition" : "Specific date/time or interval of time during which the administration took place (or did not take place).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSMedicationAdministration.occurrence[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.reason[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.reason[x]",
+      "short" : "Condition or observation that supports why the medication was administered.",
+      "definition" : "Condition or observation that supports why the medication was administered.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSMedicationAdministration.reason[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED CT (preferred), ICD-10, Orphacode"
+      }
+    },
+    {
+      "id" : "EHDSMedicationAdministration.dosage",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.dosage",
+      "short" : "Details of how medication was taken/administered.",
+      "definition" : "Details of how medication was taken/administered.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSMedicationAdministration.dosage",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAdministeredDosage"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueUri" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration|0.1.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.note",
+      "short" : "Textual information about the administration.",
+      "definition" : "Textual information about the administration.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSMedicationAdministration.note",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSMedicationAdministration",
+      "path" : "EHDSMedicationAdministration",
+      "short" : "Medication administration model",
+      "definition" : "EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure."
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.identifier",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.identifier"
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.author[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.author[x]",
+      "definition" : "Responsible person for recording the administration (this may be the performer)."
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.date",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.header.date"
+    },
+    {
+      "id" : "EHDSMedicationAdministration.header.status",
+      "path" : "EHDSMedicationAdministration.header.status",
+      "definition" : "Status of the administration (e.g. completed, on-hold).",
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 MedicationAdministration Status Codes"
+      }
+    },
+    {
+      "id" : "EHDSMedicationAdministration.medication",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.medication",
+      "short" : "Administered medication.",
+      "definition" : "Administered medication.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedication"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.occurrence[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.occurrence[x]",
+      "short" : "Specific date/time or interval of time during which the administration took place (or did not take place).",
+      "definition" : "Specific date/time or interval of time during which the administration took place (or did not take place).",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.reason[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.reason[x]",
+      "short" : "Condition or observation that supports why the medication was administered.",
+      "definition" : "Condition or observation that supports why the medication was administered.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED CT (preferred), ICD-10, Orphacode"
+      }
+    },
+    {
+      "id" : "EHDSMedicationAdministration.dosage",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.dosage",
+      "short" : "Details of how medication was taken/administered.",
+      "definition" : "Details of how medication was taken/administered.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAdministeredDosage"
+      }]
+    },
+    {
+      "id" : "EHDSMedicationAdministration.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSMedicationAdministration.note",
+      "short" : "Textual information about the administration.",
+      "definition" : "Textual information about the administration.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}

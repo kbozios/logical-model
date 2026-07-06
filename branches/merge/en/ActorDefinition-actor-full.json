@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ActorDefinition",
+  "id" : "actor-full",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition actor-full</b></p><a name=\"actor-full\"> </a><a name=\"hcactor-full\"> </a><table class=\"grid\"><tr><td><b>Actor: Full </b></td><td/><td>Type: system </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
+  },
+  "url" : "https://ehds.eu/specifications/fhir/actor-full",
+  "version" : "0.1.0",
+  "name" : "Full",
+  "status" : "active",
+  "date" : "2026-07-06T14:21:34+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "type" : "system"
+}

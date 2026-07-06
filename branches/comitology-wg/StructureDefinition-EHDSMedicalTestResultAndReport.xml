@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSMedicalTestResultAndReport"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSMedicalTestResultAndReport</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport" title="Medical test result and report model.">EHDSMedicalTestResultAndReport</a><a name="EHDSMedicalTestResultAndReport"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSDocument.html">EHDSDocument</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medical test result and report model<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information.">header</a>, <a href="StructureDefinition-EHDSDocument.html">header</a>, <a href="StructureDefinition-EHDSDocument.html" title="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document.">presentedForm</a><br/><span style="font-weight:bold">Instances of this logical model can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.header">header</a><a name="EHDSMedicalTestResultAndReport.header"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.header.eventCategory" title="Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.">eventCategory</a><a name="EHDSMedicalTestResultAndReport.header.eventCategory"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding"> </span><span style="font-weight:bold; color: #c97a18" title="This binding doesn't define a testable ValueSet" class="binding">⚠</span><span title="null" class="binding">: </span><span title="null" class="binding">LOINC (preferred), SNOMED CT</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.header.intendedRecipient[x]" title="Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). ">intendedRecipient[x]</a><a name="EHDSMedicalTestResultAndReport.header.intendedRecipient_x_"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). <br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSPatient means a structured set of data elements describing a subject of care.">intendedRecipientEHDSPatient</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSRelatedPerson means a structured set of data elements describing a person related to the patient, such as a guardian, next of kin, or other related person.">intendedRecipientEHDSRelatedPerson</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSRelatedPerson.html">EHDSRelatedPerson</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">intendedRecipientEHDSHealthProfessional</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSOrganisation means a structured set of data elements describing an organisation.">intendedRecipientEHDSOrganisation</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body" title="Medical test result and report structured body.">body</a><a name="EHDSMedicalTestResultAndReport.body"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medical test result and report structured body.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.orderInformation" title="Order Information (Laboratory Result Report could respond to multiple test orders).">orderInformation</a><a name="EHDSMedicalTestResultAndReport.body.orderInformation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Order Information (Laboratory Result Report could respond to multiple test orders).<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.orderInformation.orderId" title="An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders.">orderId</a><a name="EHDSMedicalTestResultAndReport.body.orderInformation.orderId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime" title="Date and time of the order placement.">orderDateAndTime</a><a name="EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date and time of the order placement.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer[x]" title="The person/organisation &quot;authorised&quot; to place the order. Order placer could be either a health professional, health professional organisation or the patient himself.">orderPlacer[x]</a><a name="EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer_x_"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The person/organisation &quot;authorised&quot; to place the order. Order placer could be either a health professional, health professional organisation or the patient himself.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">orderPlacerEHDSHealthProfessional</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSOrganisation means a structured set of data elements describing an organisation.">orderPlacerEHDSOrganisation</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSPatient means a structured set of data elements describing a subject of care.">orderPlacerEHDSPatient</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.orderInformation.orderReason[x]" title="An explanation or justification for why this service is being requested in coded form.">orderReason[x]</a><a name="EHDSMedicalTestResultAndReport.body.orderInformation.orderReason_x_"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">An explanation or justification for why this service is being requested in coded form.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding"> </span><span style="font-weight:bold; color: #c97a18" title="This binding doesn't define a testable ValueSet" class="binding">⚠</span><span title="null" class="binding">: </span><span title="null" class="binding">SNOMED CT (preferred), ICD-10</span><br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">orderReasonCodeableConcept</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis.">orderReasonEHDSCondition</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.">orderReasonEHDSObservation</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span title="string Type: A sequence of Unicode characters">orderReasonString</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion" title="Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation.">clinicalQuestion</a><a name="EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.supportingInformation" title="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In laboratory ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements.">supportingInformation</a><a name="EHDSMedicalTestResultAndReport.body.supportingInformation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In laboratory ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.supportingInformation.observation" title="Clinical findings and other observations.">observation</a><a name="EHDSMedicalTestResultAndReport.body.supportingInformation.observation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Clinical findings and other observations.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.supportingInformation.condition" title="Condition that may influence the service or result interpretation.">condition</a><a name="EHDSMedicalTestResultAndReport.body.supportingInformation.condition"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Condition that may influence the service or result interpretation.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration" title="Medication administered before ordering the service that may influence the service or result interpretation.">medicationAdministration</a><a name="EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSMedicationAdministration.html">EHDSMedicationAdministration</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medication administered before ordering the service that may influence the service or result interpretation.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation" title="Immunisation history that may influence the service or result interpretation.">immunisation</a><a name="EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSImmunisation.html">EHDSImmunisation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Immunisation history that may influence the service or result interpretation.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation" title="Any other type of relevant supporting information.">otherSupportingInformation</a><a name="EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/resource.html">Resource</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Any other type of relevant supporting information.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.specimen" title="Specimen information.">specimen</a><a name="EHDSMedicalTestResultAndReport.body.specimen"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSSpecimen.html">EHDSSpecimen</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen information.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.resultData" title="Medical test result data.">resultData</a><a name="EHDSMedicalTestResultAndReport.body.resultData"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medical test result data.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.resultData.comment" title="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report.">comment</a><a name="EHDSMedicalTestResultAndReport.body.resultData.comment"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/narrative.html#Narrative">Narrative</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report.<br/><span style="font-weight:bold">This profile does not constrain the narrative in regard to content, language, or traceability to data elements</span><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult[x]" title="Observation details. The content of this element is expected to be the main result data of the report, such as blood glucose level, haemoglobin value, etc. In some cases, it may also include other types of observations that are relevant for the interpretation of the results, such as blood pressure or body temperature at the time of specimen collection.">medicalTestResult[x]</a><a name="EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult_x_"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Observation details. The content of this element is expected to be the main result data of the report, such as blood glucose level, haemoglobin value, etc. In some cases, it may also include other types of observations that are relevant for the interpretation of the results, such as blood pressure or body temperature at the time of specimen collection.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.">medicalTestResultEHDSObservation</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="Model for observation performed by laboratory">medicalTestResultEHDSLaboratoryObservation</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSLaboratoryObservation.html">EHDSLaboratoryObservation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestResultAndReport-definitions.html#EHDSMedicalTestResultAndReport.attachments" title="Report attachments.">attachments</a><a name="EHDSMedicalTestResultAndReport.attachments"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Report attachments.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport"/>
+  <version value="0.1.0"/>
+  <name value="EHDSMedicalTestResultAndReport"/>
+  <title value="Medical test result and report model"/>
+  <status value="draft"/>
+  <date value="2026-06-14T20:46:18+00:00"/>
+  <publisher value="EC"/>
+  <contact>
+    <name value="EC"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://commission.europa.eu/"/>
+    </telecom>
+  </contact>
+  <description value="Medical test result and report model."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport"/>
+  <baseDefinition value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="0.1.0"/>
+    </extension>
+    <element id="EHDSMedicalTestResultAndReport">
+      <path value="EHDSMedicalTestResultAndReport"/>
+      <short value="Medical test result and report model"/>
+      <definition value="Medical test result and report model."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header"/>
+      <short value="Document header."/>
+      <definition value="Basic metadata for this information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.subject"/>
+      <short value="Patient/subject information."/>
+      <definition value="Patient/subject information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.identifier"/>
+      <short value="Unique identifier of the document."/>
+      <definition value="Unique identifier of the document."/>
+      <comment value="Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.author[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.author[x]"/>
+      <short value="Author of the document."/>
+      <definition value="Author of the document."/>
+      <comment value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.patientInsertedData">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.patientInsertedData"/>
+      <short value="Indicator that states, when included with value ‘true’, that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element."/>
+      <definition value="Indicator that states, when included with value ‘true’, that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.patientInsertedData"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.date">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.date"/>
+      <short value="Date of finalising/issuing the document."/>
+      <definition value="Date of finalising/issuing the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.status"/>
+      <short value="Status of the document."/>
+      <definition value="Status of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Composition Status"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.language"/>
+      <short value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.documentType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.documentType"/>
+      <short value="Type of document (e.g. 60591-5 Patient summary document)."/>
+      <definition value="Type of document (e.g. 60591-5 Patient summary document)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.documentTitle">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.documentTitle"/>
+      <short value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'."/>
+      <definition value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.period"/>
+      <short value="Time of service that is being documented."/>
+      <definition value="Time of service that is being documented."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.version">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.version"/>
+      <short value="Version of the document."/>
+      <definition value="Version of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.version"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.attestation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.attestation"/>
+      <short value="Document attestation details."/>
+      <definition value="Document attestation details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.attestation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.attestation.attester[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document."/>
+      <definition value="Attester who validated the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.attester[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.attestation.dateTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.attestation.dateTime"/>
+      <short value="Date and time of the approval of the document by the attester."/>
+      <definition value="Date and time of the approval of the document by the attester."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.legalAuthentication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.legalAuthentication"/>
+      <short value="Document legal authentication details."/>
+      <definition value="Document legal authentication details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.legalAuthentication.legalAuthenticator[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person or organisation taking responsibility for the content of the document."/>
+      <definition value="The person or organisation taking responsibility for the content of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.legalAuthentication.dateTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.legalAuthentication.dateTime"/>
+      <short value="Date and time when the document was authenticated."/>
+      <definition value="Date and time when the document was authenticated."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.eventCategory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.eventCategory"/>
+      <short value="Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <definition value="Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.eventCategory"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC (preferred), SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.serviceSpecialty">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.serviceSpecialty"/>
+      <short value="Additional details about where the content was created (e.g. clinical specialty)."/>
+      <definition value="Additional details about where the content was created (e.g. clinical specialty)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.serviceSpecialty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.custodian">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document."/>
+      <definition value="Organisation that is in charge of maintaining the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.countryOfOrigin">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.countryOfOrigin"/>
+      <short value="Country of origin of the document."/>
+      <definition value="Country of origin of the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.countryOfOrigin"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="ISO 3166-1 alpha-2"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.intendedRecipient[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.intendedRecipient[x]"/>
+      <short value="Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). "/>
+      <definition value="Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.header.intendedRecipient[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.presentedForm">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.presentedForm"/>
+      <short value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <definition value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.presentedForm"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body"/>
+      <short value="Medical test result and report structured body."/>
+      <definition value="Medical test result and report structured body."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation"/>
+      <short value="Order Information (Laboratory Result Report could respond to multiple test orders)."/>
+      <definition value="Order Information (Laboratory Result Report could respond to multiple test orders)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.orderInformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderId"/>
+      <short value="An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders."/>
+      <definition value="An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderId"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime"/>
+      <short value="Date and time of the order placement."/>
+      <definition value="Date and time of the order placement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer[x]"/>
+      <short value="The person/organisation &quot;authorised&quot; to place the order. Order placer could be either a health professional, health professional organisation or the patient himself."/>
+      <definition value="The person/organisation &quot;authorised&quot; to place the order. Order placer could be either a health professional, health professional organisation or the patient himself."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderReason[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderReason[x]"/>
+      <short value="An explanation or justification for why this service is being requested in coded form."/>
+      <definition value="An explanation or justification for why this service is being requested in coded form."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderReason[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED CT (preferred), ICD-10"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion"/>
+      <short value="Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation."/>
+      <definition value="Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation"/>
+      <short value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In laboratory ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements."/>
+      <definition value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In laboratory ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.supportingInformation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.observation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.observation"/>
+      <short value="Clinical findings and other observations."/>
+      <definition value="Clinical findings and other observations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.observation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.condition">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.condition"/>
+      <short value="Condition that may influence the service or result interpretation."/>
+      <definition value="Condition that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.condition"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration"/>
+      <short value="Medication administered before ordering the service that may influence the service or result interpretation."/>
+      <definition value="Medication administered before ordering the service that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation"/>
+      <short value="Immunisation history that may influence the service or result interpretation."/>
+      <definition value="Immunisation history that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSImmunisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation"/>
+      <short value="Any other type of relevant supporting information."/>
+      <definition value="Any other type of relevant supporting information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.specimen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.specimen"/>
+      <short value="Specimen information."/>
+      <definition value="Specimen information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.specimen"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.resultData">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.resultData"/>
+      <short value="Medical test result data."/>
+      <definition value="Medical test result data."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.resultData"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.resultData.comment">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.resultData.comment"/>
+      <short value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <definition value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.resultData.comment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Narrative"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult[x]"/>
+      <short value="Observation details. The content of this element is expected to be the main result data of the report, such as blood glucose level, haemoglobin value, etc. In some cases, it may also include other types of observations that are relevant for the interpretation of the results, such as blood pressure or body temperature at the time of specimen collection."/>
+      <definition value="Observation details. The content of this element is expected to be the main result data of the report, such as blood glucose level, haemoglobin value, etc. In some cases, it may also include other types of observations that are relevant for the interpretation of the results, such as blood pressure or body temperature at the time of specimen collection."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.attachments">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueUri value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.attachments"/>
+      <short value="Report attachments."/>
+      <definition value="Report attachments."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestResultAndReport.attachments"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSMedicalTestResultAndReport">
+      <path value="EHDSMedicalTestResultAndReport"/>
+      <short value="Medical test result and report model"/>
+      <definition value="Medical test result and report model."/>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.eventCategory">
+      <path value="EHDSMedicalTestResultAndReport.header.eventCategory"/>
+      <short value="Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <definition value="Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC (preferred), SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.header.intendedRecipient[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.header.intendedRecipient[x]"/>
+      <short value="Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). "/>
+      <definition value="Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals). "/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body"/>
+      <short value="Medical test result and report structured body."/>
+      <definition value="Medical test result and report structured body."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation"/>
+      <short value="Order Information (Laboratory Result Report could respond to multiple test orders)."/>
+      <definition value="Order Information (Laboratory Result Report could respond to multiple test orders)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderId"/>
+      <short value="An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders."/>
+      <definition value="An identifier of the laboratory test order. Laboratory Result Report may respond to multiple orders."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderDateAndTime"/>
+      <short value="Date and time of the order placement."/>
+      <definition value="Date and time of the order placement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderPlacer[x]"/>
+      <short value="The person/organisation &quot;authorised&quot; to place the order. Order placer could be either a health professional, health professional organisation or the patient himself."/>
+      <definition value="The person/organisation &quot;authorised&quot; to place the order. Order placer could be either a health professional, health professional organisation or the patient himself."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.orderReason[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.orderReason[x]"/>
+      <short value="An explanation or justification for why this service is being requested in coded form."/>
+      <definition value="An explanation or justification for why this service is being requested in coded form."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED CT (preferred), ICD-10"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.orderInformation.clinicalQuestion"/>
+      <short value="Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation."/>
+      <definition value="Specification of clinical question (goal of the investigation) to be answered by the laboratory investigation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation"/>
+      <short value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In laboratory ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements."/>
+      <definition value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In laboratory ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.observation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.observation"/>
+      <short value="Clinical findings and other observations."/>
+      <definition value="Clinical findings and other observations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.condition">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.condition"/>
+      <short value="Condition that may influence the service or result interpretation."/>
+      <definition value="Condition that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.medicationAdministration"/>
+      <short value="Medication administered before ordering the service that may influence the service or result interpretation."/>
+      <definition value="Medication administered before ordering the service that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.immunisation"/>
+      <short value="Immunisation history that may influence the service or result interpretation."/>
+      <definition value="Immunisation history that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSImmunisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.supportingInformation.otherSupportingInformation"/>
+      <short value="Any other type of relevant supporting information."/>
+      <definition value="Any other type of relevant supporting information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Resource"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.specimen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.specimen"/>
+      <short value="Specimen information."/>
+      <definition value="Specimen information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.resultData">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.resultData"/>
+      <short value="Medical test result data."/>
+      <definition value="Medical test result data."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.resultData.comment">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.resultData.comment"/>
+      <short value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <definition value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Narrative"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.body.resultData.medicalTestResult[x]"/>
+      <short value="Observation details. The content of this element is expected to be the main result data of the report, such as blood glucose level, haemoglobin value, etc. In some cases, it may also include other types of observations that are relevant for the interpretation of the results, such as blood pressure or body temperature at the time of specimen collection."/>
+      <definition value="Observation details. The content of this element is expected to be the main result data of the report, such as blood glucose level, haemoglobin value, etc. In some cases, it may also include other types of observations that are relevant for the interpretation of the results, such as blood pressure or body temperature at the time of specimen collection."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestResultAndReport.attachments">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSMedicalTestResultAndReport.attachments"/>
+      <short value="Report attachments."/>
+      <definition value="Report attachments."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

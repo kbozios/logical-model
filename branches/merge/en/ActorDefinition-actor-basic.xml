@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActorDefinition xmlns="http://hl7.org/fhir">
+  <id value="actor-basic"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition actor-basic</b></p><a name="actor-basic"> </a><a name="hcactor-basic"> </a><table class="grid"><tr><td><b>Actor: Basic </b></td><td/><td>Type: system </td></tr><tr><td colspan="3"/></tr></table></div>
+  </text>
+  <url value="https://ehds.eu/specifications/fhir/actor-basic"/>
+  <version value="0.1.0"/>
+  <name value="Basic"/>
+  <status value="active"/>
+  <date value="2026-07-06T14:21:34+00:00"/>
+  <publisher value="EC"/>
+  <contact>
+    <name value="EC"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://commission.europa.eu/"/>
+    </telecom>
+  </contact>
+  <type value="system"/>
+</ActorDefinition>

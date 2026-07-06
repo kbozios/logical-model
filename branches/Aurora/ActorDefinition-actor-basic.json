@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ActorDefinition",
+  "id" : "actor-basic",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition actor-basic</b></p><a name=\"actor-basic\"> </a><a name=\"hcactor-basic\"> </a><table class=\"grid\"><tr><td><b>Actor: Basic </b></td><td/><td>Type: system </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
+  },
+  "url" : "https://ehds.eu/specifications/fhir/actor-basic",
+  "version" : "0.1.0",
+  "name" : "Basic",
+  "status" : "active",
+  "date" : "2026-06-15T10:04:57+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "type" : "system"
+}

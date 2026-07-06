@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ehds.eu/fhir/models/ActorDefinition/actor-basic> a fhir:ActorDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "actor-basic"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition actor-basic</b></p><a name=\"actor-basic\"> </a><a name=\"hcactor-basic\"> </a><table class=\"grid\"><tr><td><b>Actor: Basic </b></td><td/><td>Type: system </td></tr><tr><td colspan=\"3\"/></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://ehds.eu/specifications/fhir/actor-basic"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Basic"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-07-03T07:47:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "EC"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "EC" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://commission.europa.eu/" ]
+     ] )
+  ] ) ; # 
+  fhir:type [ fhir:v "system"] . # 
+
+# -------------------------------------------------------------------------------------
+

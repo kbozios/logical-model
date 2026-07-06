@@ -1,0 +1,78 @@
+# eu.ehds.models#0.1.0: EHDS Logical Information Models(en)
+
+## Pages
+
+* [Home](en/index.md)
+* [Background](en/background.md)
+* [Download](en/downloads.md)
+* [Known issues](en/knownIssues.md)
+* [How to read this guide](en/howto.md)
+* [Medical Test Results and Laboratory Report](en/overview-medicaltestresult.md)
+* [Ways of working](en/wow.md)
+* [Scope and Content](en/scope.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Data types and references](en/datatypes.md)
+* [Authoring rules](en/authoring-process.md)
+* [Obligations Framework](en/obligations.md)
+* [ePrescription](en/overview-prescription.md)
+* [Medical Images](en/overview-medicalimages.md)
+* [Change Log](en/changes.md)
+* [eDispensation](en/overview-dispensation.md)
+* [Discharge Report](en/overview-dischargereport.md)
+* [Patient Summary](en/overview-patientsummary.md)
+
+## Resources
+
+### Logicals
+
+* [Address model](en/StructureDefinition-EHDSAddress.md)
+* [Administered dosage model](en/StructureDefinition-EHDSAdministeredDosage.md)
+* [Advance directive model](en/StructureDefinition-EHDSAdvanceDirective.md)
+* [Alert model](en/StructureDefinition-EHDSAlert.md)
+* [Allergy intolerance model](en/StructureDefinition-EHDSAllergyIntolerance.md)
+* [Attachment model](en/StructureDefinition-EHDSAttachment.md)
+* [Body structure model](en/StructureDefinition-EHDSBodyStructure.md)
+* [Care plan model](en/StructureDefinition-EHDSCarePlan.md)
+* [Condition model](en/StructureDefinition-EHDSCondition.md)
+* [Current pregnancy status model](en/StructureDefinition-EHDSCurrentPregnancyStatus.md)
+* [DataSet model](en/StructureDefinition-EHDSDataSet.md)
+* [Device or implant model](en/StructureDefinition-EHDSDevice.md)
+* [Device use model](en/StructureDefinition-EHDSDeviceUse.md)
+* [Discharge Report model](en/StructureDefinition-EHDSDischargeReport.md)
+* [Document model](en/StructureDefinition-EHDSDocument.md)
+* [Dosage model](en/StructureDefinition-EHDSDosage.md)
+* [Encounter model](en/StructureDefinition-EHDSEncounter.md)
+* [Endpoint model](en/StructureDefinition-EHDSEndpoint.md)
+* [Health professional model](en/StructureDefinition-EHDSHealthProfessional.md)
+* [Human name model](en/StructureDefinition-EHDSHumanName.md)
+* [Imaging report model](en/StructureDefinition-EHDSImagingReport.md)
+* [Imaging study model](en/StructureDefinition-EHDSImagingStudy.md)
+* [Immunisation model](en/StructureDefinition-EHDSImmunisation.md)
+* [Laboratory observation model](en/StructureDefinition-EHDSLaboratoryObservation.md)
+* [Location model](en/StructureDefinition-EHDSLocation.md)
+* [Medical test result and report model](en/StructureDefinition-EHDSMedicalTestResultAndReport.md)
+* [Medication model](en/StructureDefinition-EHDSMedication.md)
+* [Medication administration model](en/StructureDefinition-EHDSMedicationAdministration.md)
+* [Medication dispense model](en/StructureDefinition-EHDSMedicationDispense.md)
+* [Medication prescription model](en/StructureDefinition-EHDSMedicationPrescription.md)
+* [Medication use model](en/StructureDefinition-EHDSMedicationUse.md)
+* [Observation model](en/StructureDefinition-EHDSObservation.md)
+* [Organisation model](en/StructureDefinition-EHDSOrganisation.md)
+* [Patient model](en/StructureDefinition-EHDSPatient.md)
+* [Patient summary model](en/StructureDefinition-EHDSPatientSummary.md)
+* [Pregnancy history model](en/StructureDefinition-EHDSPregnancyHistory.md)
+* [Procedure model](en/StructureDefinition-EHDSProcedure.md)
+* [Related person model](en/StructureDefinition-EHDSRelatedPerson.md)
+* [Service request model](en/StructureDefinition-EHDSServiceRequest.md)
+* [Specimen model](en/StructureDefinition-EHDSSpecimen.md)
+* [Telecom model](en/StructureDefinition-EHDSTelecom.md)
+* [Travel history model](en/StructureDefinition-EHDSTravelHistory.md)
+
+### ImplementationGuides
+
+* [EHDS Logical Information Models](en/ImplementationGuide-eu.ehds.models.md)
+
+### Examples
+
+* [Basic (ActorDefinition)](en/ActorDefinition-actor-basic.md)
+* [Full (ActorDefinition)](en/ActorDefinition-actor-full.md)
